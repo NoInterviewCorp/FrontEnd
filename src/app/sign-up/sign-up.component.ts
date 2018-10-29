@@ -1,21 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import{Router} from '@angular/router';
 import {
   AuthService,
   FacebookLoginProvider,
   GoogleLoginProvider
 } from 'angular-6-social-login';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-sign-up',
+  templateUrl: './sign-up.component.html',
+  styleUrls: ['./sign-up.component.css']
 })
-export class AppComponent {
-  title = 'login-route';
-  navbarOpen = false;
+export class SignUpComponent implements OnInit {
+
   constructor( private socialAuthService: AuthService ) {}
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
   public socialSignIn(socialPlatform : string) {
     let socialPlatformProvider;
     if(socialPlatform == "facebook"){
@@ -35,4 +32,8 @@ export class AppComponent {
       }
     );
   }
+
+  ngOnInit() {
+  }
+
 }
