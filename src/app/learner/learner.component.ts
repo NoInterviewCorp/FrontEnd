@@ -10,6 +10,8 @@ export class LearnerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+
 
 }

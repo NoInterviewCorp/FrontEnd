@@ -1,0 +1,20 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter technology" name= "tech" [(ngModel)]="selectedTech">
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" (click)="search()">Search</button>  
+
+  <div *ngIf="hasClickedSearch">
+    <p> 
+      Do you have prior knowledge of {{selectedTech}} ?
+    </p>
+
+    <a routerLink="/test" routerLinkActive="active" button mat-raised-button color="primary" >Yes</a>
+    <button mat-raised-button color="primary">No</button>  
+
+  </div>
+
+
+
+
