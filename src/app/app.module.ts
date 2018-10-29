@@ -4,25 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadingComponent } from './heading/heading.component';
-//import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar'
-import {MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
+import {AngularModule} from './angular/angular.module';
+import { ContibutorhomeComponent } from './contibutorhome/contibutorhome.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeadingComponent
+    HeadingComponent,
+    ContibutorhomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //NoopAnimationsModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatMenuModule
+    AngularModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
