@@ -5,7 +5,11 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatChipsModule} from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   imports: [
@@ -13,14 +17,24 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule,
+    MatChipsModule,
+    MatIconModule,
+    MatSelectModule,
+    MatExpansionModule
   ],
   exports: [
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatChipsModule,
+    MatIconModule,
+    MatSelectModule,
+    MatExpansionModule
   ],
   declarations: []
 })

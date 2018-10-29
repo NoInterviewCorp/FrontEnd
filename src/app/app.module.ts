@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import {AngularModule} from './angular/angular.module';
 import { ContibutorhomeComponent } from './contibutorhome/contibutorhome.component';
 import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
-import { AddresourceComponent } from './addresource/addresource.component'
+import { AddresourceComponent } from './addresource/addresource.component';
+import { ResourceformComponent } from './resourceform/resourceform.component'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AddresourceComponent } from './addresource/addresource.component'
     AppComponent,
     ContibutorhomeComponent,
     AddlearningplanComponent,
-    AddresourceComponent
+    AddresourceComponent,
+    ResourceformComponent
   ],
   imports: [
     BrowserModule,
