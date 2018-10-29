@@ -1,13 +1,13 @@
 <div class="example-button-row">
   <div class="buttons">
     <div class="column">
-      <button mat-raised-button color="primary">Add LearningPlan</button>
+      <button mat-raised-button color="primary" style="font-size: 20px;" routerLink="addlearningplan" routerLinkActive="active">Add LearningPlan</button>
     </div>
     <div class="column">
-      <button mat-raised-button color="primary">Add Resource</button>
+      <button mat-raised-button color="primary" style="font-size: 20px;" routerLink="addresource" routerLinkActive="active">Add Resource</button>
     </div>
   </div>
-</div>
+</div><br>
 <h2>Your Contributed Plans>></h2>
 <div class="flex-container">
   <div class="flex" *ngFor="let index of LearningPlan; " [id]="index" >
