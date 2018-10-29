@@ -5,6 +5,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   imports: [
@@ -12,13 +14,15 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   exports : [
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   declarations: []
 })

@@ -9,6 +9,7 @@ export class SearchComponent implements OnInit {
 
   selectedTech : string;
   hasClickedSearch=false;
+  isNoSelected=false;
 
   constructor() { }
 
@@ -17,5 +18,9 @@ export class SearchComponent implements OnInit {
 
   search() {
     this.hasClickedSearch=true;
+  }
+
+  noToggle() {
+    this.isNoSelected=true;
   }
 }
