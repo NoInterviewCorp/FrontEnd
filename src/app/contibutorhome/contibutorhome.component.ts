@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CommunicatorService } from 'src/services/communicator.service';
 
 @Component({
   selector: 'app-contibutorhome',
@@ -7,11 +6,10 @@ import { CommunicatorService } from 'src/services/communicator.service';
   styleUrls: ['./contibutorhome.component.css']
 })
 export class ContibutorhomeComponent implements OnInit {
-
-  constructor(private com: CommunicatorService) { }
+  LearningPlan: Array<number> = [1,2,3,4,5];
+  constructor() { }
 
   ngOnInit() {
-    this.com.setTitle('Contribute');
   }
 
 }
