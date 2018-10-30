@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar'; 
 
 
 @NgModule({
@@ -15,14 +16,17 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    NgMatSearchBarModule
+    
   ],
   exports : [
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    NgMatSearchBarModule
   ],
   declarations: []
 })
