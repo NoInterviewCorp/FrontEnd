@@ -1,22 +1,21 @@
-import { Component, OnInit, Input, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   AuthService,
   FacebookLoginProvider,
   GoogleLoginProvider
 } from 'angular-6-social-login';
-import { MAT_DIALOG_DATA } from '@angular/material';
-export interface DialogData {
-  isSignIn: boolean;
-}
 @Component({
-  selector: 'app-sign-in',
-  templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class SignInComponent implements OnInit {
-  selectedIndex = 0;
-  constructor(private socialAuthService: AuthService, @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-    this.selectedIndex = (data.isSignIn) ? 0 : 1;
+export class HomeComponent  {
+  content = [1, 2, 3, 4]
+  title = 'PotentiOMeter';
+  navbarOpen = false;
+  constructor(private socialAuthService: AuthService) { }
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
   }
   public socialSignIn(socialPlatform: string) {
     let socialPlatformProvider;
@@ -26,15 +25,15 @@ export class SignInComponent implements OnInit {
     else if (socialPlatform == "google") {
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
     }
+
+
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
         console.log(socialPlatform + " sign in data : ", userData);
         // Now sign-in with userData
-        // ...       
+        // ...
+
       }
     );
   }
-  ngOnInit() {
-  }
-
 }

@@ -1,5 +1,4 @@
-<div *ngIf="!hasSignedIn">
-<div class="cont" >
+<div class="cont">
   <mat-toolbar color="primary">
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
@@ -24,10 +23,8 @@
     <div fxShow="true" fxHide.lt-md="true">
       <a mat-button routerLink="/Learn">Learn</a>
       <a mat-button routerLink="/Contribute">Contribute</a>
-        <!-- <a mat-button routerLink="sign-in">Log In</a>
-        <a mat-button routerLink="sign-up">Sign Up</a> -->
-        <button mat-button (click)="openDialog(true)">LogIn</button>
-        <button mat-button (click)="openDialog(false)">SignUp</button>
+      <a mat-button routerLink="sign-in" tabindex="2">Log In</a>
+      <a mat-button routerLink="sign-up">Sign Up</a>
     </div>
   </mat-toolbar>
   <mat-sidenav-container fxFlexFill class="example-container">
@@ -41,8 +38,8 @@
         <a mat-button routerLink="/Contribute">Contribute</a>
         <!-- <a mat-button routerLink="sign-in">Log In</a>
         <a mat-button routerLink="sign-up">Sign Up</a> -->
-        <button mat-button (click)="openDialog(1)">LogIn</button>
-        <button mat-button (click)="openDialog(0)">SignUp</button>
+        <a mat-button (click)="openDialog()">Log In</a>
+        <a mat-button (click)="openDialog()">Sign Up</a>
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
@@ -95,5 +92,3 @@
     </mat-card>
   </div>
 </div>
-</div>
-<router-outlet *ngIf="hasSignedIn"></router-outlet>

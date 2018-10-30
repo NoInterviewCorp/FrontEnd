@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
-import {MatDialogModule} from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   SocialLoginModule,
@@ -15,8 +14,6 @@ import {
 } from "angular-6-social-login";
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import {MatInputModule} from '@angular/material/input';
-import {MatSidenavModule, MatListModule } from '@angular/material';
 import { AngularModule } from './angular/angular.module';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
@@ -25,6 +22,8 @@ import { ScrollingContainerComponent } from './scrolling-container/scrolling-con
 import { LearningPlanComponent } from './learning-plan/learning-plan.component';
 import { LearnComponent } from './learn/learn.component';
 import { ContributeComponent } from './contribute/contribute.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -52,7 +51,8 @@ export function getAuthServiceConfigs() {
     ContributeComponent,
     SignInComponent,
     SignUpComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -61,13 +61,12 @@ export function getAuthServiceConfigs() {
     SocialLoginModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatSidenavModule,
-    MatListModule,
-    MatInputModule,
-    MatDialogModule,
     NgMatSearchBarModule,
     FlexLayoutModule,
     NgMatSearchBarModule 
+  ],
+  entryComponents:[
+    SignInComponent
   ],
   providers: [
     {

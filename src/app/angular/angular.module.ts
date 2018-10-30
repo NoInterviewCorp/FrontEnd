@@ -7,7 +7,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { MatDialogModule } from '@angular/material/dialog'
+import { MatInputModule } from '@angular/material/input';
+import { MatSidenavModule, MatListModule } from '@angular/material';
 
 
 @NgModule({
@@ -19,7 +21,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatInputModule,
+    MatDialogModule
   ],
   exports: [
     CommonModule,
@@ -29,7 +35,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatInputModule,
+    MatDialogModule
   ],
   declarations: []
 })
