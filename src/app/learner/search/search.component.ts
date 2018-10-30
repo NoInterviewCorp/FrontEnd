@@ -10,6 +10,7 @@ export class SearchComponent implements OnInit {
   selectedTech : string;
   hasClickedSearch=false;
   isNoSelected=false;
+  LearningPlan: Array<number> = [1,2,3,4,5];
 
   constructor() { }
 
@@ -22,5 +23,7 @@ export class SearchComponent implements OnInit {
 
   noToggle() {
     this.isNoSelected=true;
+    this.hasClickedSearch=false;
   }
+
 }
