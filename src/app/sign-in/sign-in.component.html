@@ -1,0 +1,32 @@
+<div class="login-box">
+  <div class="lb-header">
+    <a  class="active" id="login-box-link">Login</a>
+    <a routerLink="/sign-up"  id="signup-box-link">Sign Up</a>
+  </div>
+  <div class="social-login">
+    <a href="#" (click)="socialSignIn('facebook')">
+      <i class="fa fa-facebook fa-lg"></i>
+      Login with facebook
+    </a>
+    <a href="#" (click)="socialSignIn('google')">
+      <i class="fa fa-google-plus fa-lg"></i>
+      log in with Google
+    </a>
+  </div>
+  <form class="email-login">
+    <div class="u-form-group">
+      <input type="email" placeholder="Email"/>
+    </div>
+    <div class="u-form-group">
+      <input type="password" placeholder="Password"/>
+    </div>
+    <div class="u-form-group">
+      <button>Log in</button>
+    </div>
+    <div class="u-form-group">
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+  </form>
+  
+</div>
+
