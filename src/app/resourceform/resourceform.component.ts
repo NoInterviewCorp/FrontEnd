@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material';
-
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material';
 
 export interface Concept {
   name: string;
@@ -13,7 +14,7 @@ export interface Concept {
   styleUrls: ['./resourceform.component.css']
 })
 export class ResourceformComponent implements OnInit {
-  
+  @Input() id: number;
   constructor() { }
 
   ngOnInit() {

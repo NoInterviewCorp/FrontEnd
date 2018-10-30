@@ -7,7 +7,9 @@ import {AngularModule} from './angular/angular.module';
 import { ContibutorhomeComponent } from './contibutorhome/contibutorhome.component';
 import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
 import { AddresourceComponent } from './addresource/addresource.component';
-import { ResourceformComponent } from './resourceform/resourceform.component'
+import { ResourceformComponent } from './resourceform/resourceform.component';
+import { QuestionformComponent } from './questionform/questionform.component';
+import { QuestionsComponent } from './questions/questions.component'
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ResourceformComponent } from './resourceform/resourceform.component'
     ContibutorhomeComponent,
     AddlearningplanComponent,
     AddresourceComponent,
-    ResourceformComponent
+    ResourceformComponent,
+    QuestionformComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,

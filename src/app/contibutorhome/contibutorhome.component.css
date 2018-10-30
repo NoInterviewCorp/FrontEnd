@@ -30,8 +30,9 @@
     flex-wrap: wrap;
     padding-top: 10px;
   }
+  
   .flex{
-      flex: 25%;
+      width: 25%;
   }
 
 button{
