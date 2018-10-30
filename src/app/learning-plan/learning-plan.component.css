@@ -1,0 +1,13 @@
+mat-card{
+    width:300px;
+    margin: 10px;
+    margin-left:0;
+}
+.votes{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: black;
+}

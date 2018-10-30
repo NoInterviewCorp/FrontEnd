@@ -10,6 +10,7 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'PotentiOMeter';
   navbarOpen = false;
   constructor( private socialAuthService: AuthService ) {}
