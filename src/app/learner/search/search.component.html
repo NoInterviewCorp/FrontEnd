@@ -1,4 +1,8 @@
-<div class="flex-container">
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<h1 class="mat-display-1">Jackdaws love my big sphinx of quartz.</h1>
+<h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2> -->
+
+<div class="flex-container" *ngIf=showSearch>
 <form class="form">
 <mat-form-field class="example-full-width">
 <input matInput placeholder="Enter technology" name= "tech" [(ngModel)]="selectedTech">
@@ -9,15 +13,14 @@
 </div> 
 <div class="flex1">
 <div class="flex" *ngIf="hasClickedSearch">
-  <div>
-<p> Do you have prior knowledge of {{selectedTech}} ? </p></div>
-<div>
-<button mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" >Yes</button>
-<button mat-raised-button color="primary" (click)="noToggle()">No</button>  
+<h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+<div class="wrapper">
+<button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" >Yes</button>
+<button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>  
 </div>
 </div>
 </div>
-
+<h2 class="mat-display-1" *ngIf="isNoSelected"> Popular Learning Plans </h2>
 <div class="flex-container" *ngIf="isNoSelected">
 
 <mat-card class="example-card">
