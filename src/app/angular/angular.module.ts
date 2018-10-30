@@ -10,12 +10,16 @@ import {MatChipsModule} from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';
-//import {MatIconModule} from '@angular/material/icon';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
@@ -24,7 +28,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatChipsModule,
     MatIconModule,
     MatSelectModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatBottomSheetModule
   ],
   exports: [
     BrowserAnimationsModule,
@@ -36,7 +41,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatChipsModule,
     MatIconModule,
     MatSelectModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatBottomSheetModule
   ],
   declarations: []
 })
