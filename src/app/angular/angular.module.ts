@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,10 +14,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule, MatListModule } from '@angular/material';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
     BrowserAnimationsModule,
+    FormsModule,
+    NgMatSearchBarModule
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
@@ -40,6 +45,8 @@ import { MatSidenavModule, MatListModule } from '@angular/material';
     MatListModule,
     MatInputModule,
     MatDialogModule
+    FormsModule,
+    NgMatSearchBarModule
   ],
   declarations: []
 })
