@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  yourSubscriptions="Your Subscriptions";
-  yourContributions="Your Contributions";
-  trendingPlans="Trending Plans";
   constructor() { }
 
   ngOnInit() {

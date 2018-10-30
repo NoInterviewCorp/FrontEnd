@@ -1,9 +1,6 @@
 mat-tab-group{
     width: 100%;
 }
-.learn, .contribute{
-    height: 500px;
-}
 .learn{
     background-color: bisque;
 }

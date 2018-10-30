@@ -9,6 +9,8 @@ import { LandingComponent } from './landing/landing.component';
 import { TabsComponent } from './landing/tabs/tabs.component';
 import { ScrollingContainerComponent } from './scrolling-container/scrolling-container.component';
 import { LearningPlanComponent } from './learning-plan/learning-plan.component';
+import { LearnComponent } from './learn/learn.component';
+import { ContributeComponent } from './contribute/contribute.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { LearningPlanComponent } from './learning-plan/learning-plan.component';
     LandingComponent,
     TabsComponent,
     ScrollingContainerComponent,
-    LearningPlanComponent
+    LearningPlanComponent,
+    LearnComponent,
+    ContributeComponent
   ],
   imports: [
     BrowserModule,
