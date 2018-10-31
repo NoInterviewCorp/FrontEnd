@@ -20,7 +20,7 @@ import { MatSidenavModule, MatListModule } from '@angular/material';
     CommonModule,
     BrowserAnimationsModule,
     FormsModule,
-    NgMatSearchBarModule
+    NgMatSearchBarModule,
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
@@ -44,7 +44,7 @@ import { MatSidenavModule, MatListModule } from '@angular/material';
     MatSidenavModule,
     MatListModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
     FormsModule,
     NgMatSearchBarModule
   ],
