@@ -2,7 +2,7 @@ mat-card{
     width:300px;
     margin: 10px;
     margin-left:0;
-    background-color: antiquewhite;
+    background-color: rgba(216, 64, 64, 0.164);
 }
 .votes{
     display: flex;

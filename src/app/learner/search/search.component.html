@@ -1,19 +1,26 @@
-<div class="flex-container" *ngIf=showSearch>
+<!-- <div class="flex-container" *ngIf=showSearch>
   <form class="form">
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Enter technology" name="tech" [(ngModel)]="selectedTech">
     </mat-form-field>
     <br>
     <button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button>
-  </form>
-</div>
+  </form> -->
+  <form class="example-form" *ngIf=showSearch>
+      <mat-form-field class="example-full-width"  >
+          <input matInput placeholder="Technology Name" name="tech" [(ngModel)]="selectedTech">
+      </mat-form-field>
+      <button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button>
+</form>
+
 <div class="flex1">
   <div class="flex" *ngIf="hasClickedSearch">
-    <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+    <h6 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h6>
     <div class="wrapper">
-      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
-      <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
+      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes,I have knowledge</button>
+      <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No,I want to learn</button>
     </div>
   </div>
-</div>
+  </div>
+
 <app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container>
