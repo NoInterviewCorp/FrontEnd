@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  selectedTech : string;
-  hasClickedSearch=false;
-  isNoSelected=false;
-  showSearch=true;
-  LearningPlan: Array<number> = [1,2,3,4,5];
+  selectedTech: string = '';
+  prefixPopularPlans = "Popular Learning Plans for ";
+  popularPlans: string = '';
+  hasClickedSearch = false;
+  isNoSelected = false;
+  showSearch = true;
+  LearningPlan: Array<number> = [1, 2, 3, 4, 5];
 
   constructor() { }
 
@@ -19,13 +21,15 @@ export class SearchComponent implements OnInit {
   }
 
   search() {
-    this.hasClickedSearch=true;
+    this.hasClickedSearch = true;
   }
 
   noToggle() {
-    this.isNoSelected=true;
-    this.hasClickedSearch=false;
-    this.showSearch=false;
+    this.popularPlans = this.prefixPopularPlans + this.selectedTech;
+    this.isNoSelected = true;
+    this.hasClickedSearch = false;
+    this.showSearch = false;
+    console.log(this.popularPlans);
   }
 
 }

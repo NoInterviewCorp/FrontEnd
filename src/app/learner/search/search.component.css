@@ -41,9 +41,3 @@
       margin-left: 40px;
       margin-right:16px
   }
-  
-
-  .example-header-image {
-    background-image: url('src\\assets\\images\\profile.png');
-    background-size: cover;
-  }

@@ -1,108 +1,19 @@
-<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-<h1 class="mat-display-1">Jackdaws love my big sphinx of quartz.</h1>
-<h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2> -->
-
 <div class="flex-container" *ngIf=showSearch>
-<form class="form">
-<mat-form-field class="example-full-width">
-<input matInput placeholder="Enter technology" name= "tech" [(ngModel)]="selectedTech">
-</mat-form-field>
-<br>
-<button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button> 
-</form>
-</div> 
+  <form class="form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter technology" name="tech" [(ngModel)]="selectedTech">
+    </mat-form-field>
+    <br>
+    <button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button>
+  </form>
+</div>
 <div class="flex1">
-<div class="flex" *ngIf="hasClickedSearch">
-<h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
-<div class="wrapper">
-<button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" >Yes</button>
-<button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>  
+  <div class="flex" *ngIf="hasClickedSearch">
+    <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+    <div class="wrapper">
+      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
+      <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<h2 class="mat-display-1" *ngIf="isNoSelected"> Popular Learning Plans </h2>
-<div class="flex-container" *ngIf="isNoSelected">
-
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Learning Plan 1</mat-card-title>
-    <mat-card-subtitle>By abc</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-actions>
-    <button mat-button>upvote</button>
-    <button mat-button>downvote</button>
-  </mat-card-actions>
-</mat-card>
-
-<mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Learning Plan 2</mat-card-title>
-      <mat-card-subtitle>By abc</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-actions>
-      <button mat-button>upvote</button>
-      <button mat-button>downvote</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Learning Plan 3</mat-card-title>
-        <mat-card-subtitle>By abc</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-actions>
-        <button mat-button>upvote</button>
-        <button mat-button>downvote</button>
-      </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Learning Plan 4</mat-card-title>
-          <mat-card-subtitle>By abc</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-actions>
-          <button mat-button>upvote</button>
-          <button mat-button>downvote</button>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-card class="example-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Learning Plan 5</mat-card-title>
-            <mat-card-subtitle>By abc</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-actions>
-            <button mat-button>upvote</button>
-            <button mat-button>downvote</button>
-          </mat-card-actions>
-        </mat-card>
-    <!-- <div class="flex-container">
-        <div class="flex" *ngFor="let index of LearningPlan; " [id]="index" >
-          <mat-card class="example-card">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title style="font-size: 20px">Java</mat-card-title>
-              <mat-card-subtitle>By John</mat-card-subtitle>
-            </mat-card-header><br><br>
-            <mat-card-content>
-              <p>This Plan helps you to understand and apply the concepts of JAVA</p>
-              <a href="https://www.tutorialspoint.com/java/java_environment_setup.htm">"Link for concept 1"</a><br>
-              <a href="https://www.tutorialspoint.com/java/java_basic_datatypes.htm">"Link for concept 2"</a>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button style="font-size: 20px" routerLink="home" routerLinkActive="active">EDIT>></button>
-            </mat-card-actions>
-          </mat-card>
-        </div> -->
-        
-</div>
-
-
-
-
+<app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container>
