@@ -22,6 +22,7 @@ export class SearchComponent implements OnInit {
 
   search() {
     this.hasClickedSearch = true;
+    this.showSearch = false;
   }
 
   noToggle() {
