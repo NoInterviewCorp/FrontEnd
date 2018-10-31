@@ -42,7 +42,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatSelectModule,
     MatExpansionModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: []
 })
