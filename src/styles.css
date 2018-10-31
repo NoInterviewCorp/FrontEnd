@@ -3,6 +3,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
+    padding-top:64px;
 }
 .custom-dialog-container .mat-dialog-container {
     padding:0;
