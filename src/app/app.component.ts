@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Potenti-o-meter';
+  hasSignedIn = false;
+  content = [1, 2, 3, 4]
+  title = 'PotentiOMeter';
+  handleEvent(event){
+    console.log(event);
+    this.hasSignedIn  = event;
+  }
+  constructor() { }
 }
