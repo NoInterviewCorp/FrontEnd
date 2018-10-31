@@ -27,6 +27,12 @@ import { LearnComponent } from './learn/learn.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { ContibutorhomeComponent } from './contibutorhome/contibutorhome.component';
+import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
+import { AddresourceComponent } from './addresource/addresource.component';
+import { ResourceformComponent } from './resourceform/resourceform.component';
+import { QuestionformComponent } from './questionform/questionform.component';
+import { QuestionsComponent } from './questions/questions.component';
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -58,7 +64,13 @@ export function getAuthServiceConfigs() {
     HomeComponent,
     LearnerComponent,
     SearchComponent,
-    TestComponent
+    TestComponent,
+    ContibutorhomeComponent,
+    AddlearningplanComponent,
+    AddresourceComponent,
+    ResourceformComponent,
+    QuestionformComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +81,7 @@ export function getAuthServiceConfigs() {
     LayoutModule,
     NgMatSearchBarModule,
     FlexLayoutModule,
-    NgMatSearchBarModule 
+    NgMatSearchBarModule
   ],
   entryComponents:[
     SignInComponent

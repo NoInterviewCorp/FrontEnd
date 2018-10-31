@@ -14,7 +14,11 @@
       "node_modules/@types"
     ],
     "lib": [
+<<<<<<< HEAD
       "es2017",
+=======
+      "es2018",
+>>>>>>> contributor
       "dom"
     ]
   }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatInputModule } from '@angular/material/input';
-import { MatSidenavModule, MatListModule } from '@angular/material';
+import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatExpansionModule, MatBottomSheetModule, MatTooltipModule } from '@angular/material';
 
 
 
@@ -30,7 +30,13 @@ import { MatSidenavModule, MatListModule } from '@angular/material';
     MatSidenavModule,
     MatListModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatChipsModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatBottomSheetModule,
+    ReactiveFormsModule,
+    MatTooltipModule
   ],
   exports: [
     CommonModule,
@@ -46,7 +52,13 @@ import { MatSidenavModule, MatListModule } from '@angular/material';
     MatInputModule,
     MatDialogModule,
     FormsModule,
-    NgMatSearchBarModule
+    NgMatSearchBarModule,
+    MatChipsModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatBottomSheetModule,
+    ReactiveFormsModule,
+    MatTooltipModule
   ],
   declarations: []
 })

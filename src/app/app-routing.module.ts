@@ -7,15 +7,18 @@ import { LearnerComponent } from './learner/learner.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
+import { ContibutorhomeComponent } from './contibutorhome/contibutorhome.component';
+import { QuestionsComponent } from './questions/questions.component';
+import { AddresourceComponent } from './addresource/addresource.component';
+import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
 
 const routes: Routes = [
-  {path: 'profile', component: LandingComponent},
-//   {path: '', component: LearnerComponent },
-  {path: 'test', component: TestComponent}
-  // {path:'home',component:HomeComponent},
-  // {path: '', redirectTo: 'profile', pathMatch:'full'},
-  // {path:'sign-in', component:SignInComponent},
-  // {path:'sign-up', component:SignUpComponent}
+  { path: 'profile', component: LandingComponent },
+  { path: 'contribute', component: ContibutorhomeComponent },
+  { path: 'questions', component: QuestionsComponent },
+  { path: 'addresource', component: AddresourceComponent },
+  { path: 'addlearningplan', component: AddlearningplanComponent },
+  { path: 'test', component: TestComponent }
 ];
 
 @NgModule({
