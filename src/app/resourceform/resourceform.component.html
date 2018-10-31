@@ -41,7 +41,6 @@ Resource {{id}}
     </mat-chip-list>
 </mat-form-field>
 <mat-form-field>
-    
     <mat-select [(value)]="selected" placeholder="Give Bloom's Taxanomy Level" [formControl]="bloomlevel"
         required>
         <mat-error *ngIf="bloomlevel.invalid">{{getErrorMessage2()}}</mat-error>
@@ -53,8 +52,16 @@ Resource {{id}}
         <mat-option value="5">Synthesis</mat-option>
         <mat-option value="6">Evaluation</mat-option>
     </mat-select>
-    
-</mat-form-field><br><br>
+</mat-form-field>
+ <a matTooltip="know about Bloom's Taxonomy" aria-label="Button that displays a tooltip when focused or hovered over" href="https://en.wikipedia.org/wiki/Bloom%27s_taxonomy" target="_blank">
+    <mat-icon class="help">help</mat-icon>
+</a> 
+<!-- <button mat-raised-button
+        matTooltip="Info about the action"
+        aria-label="Button that displays a tooltip when focused or hovered over">
+  Action
+</button> -->
+<br><br>
 <div>
     <button mat-raised-button color="primary" (click)="openBottomSheet()">Add Questions</button>
 </div>

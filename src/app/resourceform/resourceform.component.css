@@ -19,6 +19,9 @@ mat-icon{
 mat-expansion-panel-header{
     padding-top: 15px;
 }
+.help{
+    color: black;
+}
 
 
 

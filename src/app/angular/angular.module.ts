@@ -12,8 +12,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -29,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatSelectModule,
     MatExpansionModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatTooltipModule
   ],
   exports: [
     BrowserAnimationsModule,
@@ -45,6 +45,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatBottomSheetModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTooltipModule
   ],
   declarations: []
 })
