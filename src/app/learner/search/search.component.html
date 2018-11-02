@@ -11,7 +11,7 @@
   <div class="flex" *ngIf="hasClickedSearch">
     <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
     <div class="wrapper">
-      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
+      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" (click)="setTech(selectedTech)">Yes</button>
       <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
     </div>
   </div>

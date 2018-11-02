@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Technology } from 'src/app/technology.model';
+import { TestService } from 'src/app/services/test.service';
 
 @Component({
   selector: 'app-search',
@@ -15,7 +17,7 @@ export class SearchComponent implements OnInit {
   showSearch = true;
   LearningPlan: Array<number> = [1, 2, 3, 4, 5];
 
-  constructor() { }
+  constructor(private testService: TestService ) { }
 
   ngOnInit() {
   }
@@ -31,6 +33,10 @@ export class SearchComponent implements OnInit {
     this.hasClickedSearch = false;
     this.showSearch = false;
     console.log(this.popularPlans);
+  }
+
+  setTech(t:Technology) {
+    this.testService.setTechName(t);
   }
 
 }

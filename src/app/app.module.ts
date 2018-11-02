@@ -33,6 +33,7 @@ import { AddresourceComponent } from './addresource/addresource.component';
 import { ResourceformComponent } from './resourceform/resourceform.component';
 import { QuestionformComponent } from './questionform/questionform.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { HttpClientModule } from '@angular/common/http';
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -74,6 +75,7 @@ export function getAuthServiceConfigs() {
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularModule,
     AppRoutingModule,
     SocialLoginModule,
