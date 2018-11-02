@@ -1,59 +1,62 @@
 <div class="cont">
-        <mat-toolbar color="primary">
-          <div class="flex-container2">
-            <div fxShow="true" fxHide.gt-sm="true">
-              <button mat-icon-button (click)="sidenav.toggle()">
-                <mat-icon>Menu</mat-icon>
-              </button>
-            </div>
-            <div class="flex0">
-              <a mat-button class="companyName" routerLink="/">
-                <span>PotentiOMeter</span>
-              </a>
-            </div>
-            <div class="flex2">
-              <span class="example-spacer"></span>
-              <div fxShow="true" fxHide.lt-md="true">
-                <a mat-button>
-                  <div class="topnav">
-                    <div class="search-container">
-                      <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Submit</button>
-                      </form>
-                    </div>
-                  </div>
-                </a></div>
-            </div>
-            <div class="flex3" fxShow="true" fxHide.lt-md="true">
-              <a mat-button routerLink="/Learn">Learn</a>
-              <a mat-button routerLink="/Contribute">Contribute</a>
-              <button mat-button *ngIf="hasSignedIn">My Profile</button>
-              <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
-              <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
-            </div>
+<mat-toolbar color="primary">
+<div class="flex-container2">
+  <div fxShow="true" fxHide.gt-sm="true">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>Menu</mat-icon>
+    </button>
+  </div>
+  <div class="flex0">
+    <a mat-button class="companyName" routerLink="/">
+      <span>PotentiOMeter</span>
+    </a>
+  </div>
+  <div class="flex2">
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button>
+        <div class="topnav">
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit">Submit</button>
+            </form>
           </div>
-        </mat-toolbar>
-        <mat-sidenav-container fxFlexFill class="example-container">
-          <mat-sidenav color="primary" #sidenav fxLayout="column" mode="side" opened="false" fxHide.gt-sm="true">
-            <div fxLayout="column">
-              <form class="example" style="margin:auto;max-width:300px">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Submit</button>
-              </form>
-              <a mat-button routerLink="/Learn">Learn</a>
-              <a mat-button routerLink="/Contribute">Contribute</a>
-              <button mat-button (click)="openDialog(true)">LogIn</button>
-              <button mat-button (click)="openDialog(false)">SignUp</button>
-            </div>
-          </mat-sidenav>
+        </div>
+      </a></div>
+  </div>
+  <div class="flex3" fxShow="true" fxHide.lt-md="true">
+    <!-- <a mat-button routerLink="/Learn">Learn</a>
+    <a mat-button routerLink="/Contribute">Contribute</a> -->
+    <a mat-button href="#learn">Learn</a>
+    <a mat-button href="#contribute">Contribute</a>
+    <button mat-button *ngIf="hasSignedIn">My Profile</button>
+    <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
+    <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
+</div>
+</div>
+</mat-toolbar>
+<mat-sidenav-container fxFlexFill class="example-container">
+<mat-sidenav color="primary" #sidenav fxLayout="column" mode="side" opened="false" fxHide.gt-sm="true">
+  <div fxLayout="column">
+    <form class="example" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+    <a mat-button routerLink="/Learn">Learn</a>
+    <a mat-button routerLink="/Contribute">Contribute</a>
+    <button mat-button (click)="openDialog(true)">LogIn</button>
+    <button mat-button (click)="openDialog(false)">SignUp</button>
+  </div>
+</mat-sidenav>
 
-          <mat-sidenav-content fxFlexFill>
-                <app-home *ngIf="!hasSignedIn"></app-home>
+<mat-sidenav-content fxFlexFill>
 
-            </mat-sidenav-content>
-            <router-outlet *ngIf="hasSignedIn"></router-outlet>
+  </mat-sidenav-content>
 
-        </mat-sidenav-container> 
-      
-        </div> 
+</mat-sidenav-container> 
+
+</div> 
+  <app-home *ngIf="!hasSignedIn"></app-home>
+    <router-outlet *ngIf="hasSignedIn"></router-outlet>
+
