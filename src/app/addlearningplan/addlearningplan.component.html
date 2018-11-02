@@ -10,15 +10,14 @@
 
   <div class="accordian">
     <mat-accordion>
-            <app-resourceform *ngFor="let index of resources" [id]="index"></app-resourceform><br><br>
+            <app-addtopic *ngFor="let index of topics" [id]="index"></app-addtopic><br><br>
     </mat-accordion>
     <div class="buttons">
     <div>
-            <button mat-raised-button color="primary" routerLink="/contribute" routerLinkActive="active">Submit</button>
+            <button mat-raised-button color="primary" routerLink="/profile" routerLinkActive="active">Submit</button>
      </div>
      <div>
             <button mat-raised-button color="primary" (click)="addResource()">Add</button>
      </div>
      </div>
      </div>
-  

@@ -10,7 +10,7 @@ import {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
-  content = [1, 2, 3, 4]
+  content = [1, 2, 3, 4,5]
   title = 'PotentiOMeter';
   navbarOpen = false;
   constructor(private socialAuthService: AuthService) { }

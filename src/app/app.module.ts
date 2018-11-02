@@ -33,6 +33,7 @@ import { AddresourceComponent } from './addresource/addresource.component';
 import { ResourceformComponent } from './resourceform/resourceform.component';
 import { QuestionformComponent } from './questionform/questionform.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { AddtopicComponent } from './addtopic/addtopic.component';
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -70,7 +71,8 @@ export function getAuthServiceConfigs() {
     AddresourceComponent,
     ResourceformComponent,
     QuestionformComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    AddtopicComponent
   ],
   imports: [
     BrowserModule,

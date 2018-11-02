@@ -13,6 +13,7 @@ import { AddresourceComponent } from './addresource/addresource.component';
 import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
 
 const routes: Routes = [
+  //{path: 'home',component: HomeComponent},
   { path: 'profile', component: LandingComponent },
   { path: 'contribute', component: ContibutorhomeComponent },
   { path: 'questions', component: QuestionsComponent },

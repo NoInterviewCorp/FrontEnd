@@ -57,11 +57,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 10px;
   }
  
   .flex1{
-      width: 25%;
+      width: 20%;
   }
   body {
     font-family: Arial;

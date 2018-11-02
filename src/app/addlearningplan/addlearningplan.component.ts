@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddlearningplanComponent implements OnInit {
   hasClickedAdd:boolean;
-  resources: Array<number> = [1];
-  lastNumber = this.resources.length;
+  topics: Array<number> = [1];
+  lastNumber = this.topics.length;
+  topicName:string;
   constructor() { }
 
   ngOnInit() {
@@ -16,7 +17,7 @@ export class AddlearningplanComponent implements OnInit {
   addResource() {
     //console.log("clicked");
     this.hasClickedAdd = true;
-    this.resources.push(++this.lastNumber);
+    this.topics.push(++this.lastNumber);
   }
-
+   
 }

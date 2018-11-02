@@ -19,7 +19,7 @@ export class QuestionformComponent implements OnInit {
   questionObj: Questions = new Questions();
   resourcelink = new FormControl('', [Validators.required]);
   bloomlevel = new FormControl('', [Validators.required]);
-  isValidArray: boolean[] = new Array(7).fill(false);
+  isValidArray: boolean[] = new Array(6).fill(false);
   form: FormGroup;
   items = [
     { key: 'item1' },
@@ -117,17 +117,17 @@ export class QuestionformComponent implements OnInit {
 
 
 
+  // getErrorMessage5() {
+  //   this.noError.emit({ MemberId: this.id, HasError: false });
+  //   this.isValidArray[5] = false;
+  //   return this.resourcelink.hasError('required') ? 'You must enter a value' : '';
+  // }
+
+
+
   getErrorMessage5() {
     this.noError.emit({ MemberId: this.id, HasError: false });
     this.isValidArray[5] = false;
-    return this.resourcelink.hasError('required') ? 'You must enter a value' : '';
-  }
-
-
-
-  getErrorMessage6() {
-    this.noError.emit({ MemberId: this.id, HasError: false });
-    this.isValidArray[6] = false;
     return this.bloomlevel.hasError('required') ? 'You must enter a value' : '';
   }
 
