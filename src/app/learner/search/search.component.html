@@ -28,10 +28,13 @@
         </a>
         </div>
     </div> -->
+    <div class="cards">
     <div class="scrolling-wrapper">
+      <a [routerLink]="" (click)="setTech(tech)">
         <app-card  *ngFor="let tech of technology" [name]="tech.Name">
         </app-card>
-    </div>
+      </a>
+    </div></div>
 
     <div *ngIf="ask">
         <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
