@@ -1,4 +1,6 @@
+import { Questions} from './question.model';
 export class Technology {
-    TechnologyId : number;
-    Name : string;
+    technologyId : number;
+    name : string;
+    questions : Questions[];
 }

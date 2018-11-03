@@ -20,13 +20,18 @@ export class TestService {
   }
  
   getQuestions() {
-  //   let selectedTopic=this.tech.Topics.find(x=>x.Name==this.sTopic);
-  //   console.log(this.tech);
-  //   if(selectedTopic!=null)
-  //   { 
-  //     return selectedTopic.Questions;
-  //   }
-  //   return null;
-   }
+    // let selectedTech=this.tech.find(x=>x.Name==this.Name);
+    // console.log(this.tech);
+    // if(selectedTopic!=null)
+    // { 
+    //   return selectedTopic.Questions;
+    // }
+    // return null;
+    console.log("ques for:"+this.tech);
+    
+    console.log(this.tech.questions);
+    
+  }
+
  
 }

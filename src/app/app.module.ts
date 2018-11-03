@@ -34,6 +34,7 @@ import { ResourceformComponent } from './resourceform/resourceform.component';
 import { QuestionformComponent } from './questionform/questionform.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './learner/card/card.component';
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -71,7 +72,8 @@ export function getAuthServiceConfigs() {
     AddresourceComponent,
     ResourceformComponent,
     QuestionformComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

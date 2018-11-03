@@ -1,4 +1,4 @@
-<div class="flex-container" *ngIf=showSearch>
+<!-- <div class="flex-container" *ngIf=showSearch>
   <form class="form">
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Enter technology" name="tech" [(ngModel)]="selectedTech">
@@ -16,4 +16,17 @@
     </div>
   </div>
 </div>
-<app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container>
+<app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container> -->
+
+<div>
+    <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button>
+    <div class="card" *ngFor="let tech of technology">
+        <app-card [name]="tech.Name">
+        </app-card>
+      </div>
+</div>
+
+
+
+
+
