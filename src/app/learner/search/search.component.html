@@ -19,22 +19,25 @@
 <app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container> -->
 
 <div>
-    <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button>
-    <!-- <div class="cards" *ngFor="let tech of technology">
+    <!-- <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button> -->
+    <div class="cards" *ngFor="let tech of technology">
         <div *ngIf="!ask">
-        <a [routerLink]="" (click)="setTech(tech)">
-        <app-card [name]="tech.Name">
-        </app-card>
-        </a>
+            
+                <a [routerLink]="" (click)="setTech(tech)">
+                  <app-card [name]="tech.Name">
+                  </app-card>
+                </a>
         </div>
-    </div> -->
-    <div class="cards">
-    <div class="scrolling-wrapper">
-      <a [routerLink]="" (click)="setTech(tech)">
+
+    </div>
+    <!-- <div class="cards">
+        <a [routerLink]="" (click)="setTech(tech)">
+        <div class="scrolling-wrapper">
         <app-card  *ngFor="let tech of technology" [name]="tech.Name">
         </app-card>
+        </div>
       </a>
-    </div></div>
+    </div> -->
 
     <div *ngIf="ask">
         <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>

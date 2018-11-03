@@ -25,7 +25,14 @@ export class SearchComponent implements OnInit {
   constructor(private testService: TestService,private http: HttpClient ) { }
 
   ngOnInit() {
+
+    this.http.get('http://localhost:3000/Technology').subscribe((res: any) => {
+      this.technology = res;
+      console.log(this.technology);
+  });
+
   }
+
 
   search() {
     this.hasClickedSearch = true;
@@ -51,11 +58,11 @@ export class SearchComponent implements OnInit {
     
   }
  
-  showTechs() {
-    this.http.get('http://localhost:3000/Technology').subscribe((res: any) => {
-      this.technology = res;
-      console.log(this.technology);
-  });
-  this.showBtn=false;
-}
+//   showTechs() {
+//     this.http.get('http://localhost:3000/Technology').subscribe((res: any) => {
+//       this.technology = res;
+//       console.log(this.technology);
+//   });
+//   this.showBtn=false;
+// }
 }
