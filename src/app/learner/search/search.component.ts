@@ -20,6 +20,7 @@ export class SearchComponent implements OnInit {
   
   technology=[];
   showBtn=true;
+  ask=false;
 
   constructor(private testService: TestService,private http: HttpClient ) { }
 
@@ -41,9 +42,11 @@ export class SearchComponent implements OnInit {
 
   setTech(t:Technology) {
     this.testService.setTechName(t);
-    console.log(t.Name);
-    console.log(t.Questions);
+    let x  = this.testService.getTechName();
+    console.log("techname:"+x.Name);
+    console.log(x.Questions);
     this.selectedTech=t.Name;
+    this.ask=true;
     
   }
  
@@ -52,5 +55,6 @@ export class SearchComponent implements OnInit {
       this.technology = res;
       console.log(this.technology);
   });
+  this.showBtn=false;
 }
 }

@@ -21,11 +21,19 @@
 <div>
     <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button>
     <div class="card" *ngFor="let tech of technology">
+        <!-- <div *ngIf="!ask"> -->
         <a [routerLink]="" (click)="setTech(tech)">
         <app-card [name]="tech.Name">
         </app-card>
         </a>
+        <!-- </div> -->
     </div>
+    <div *ngIf="ask">
+        <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+        <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
+        <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
+    </div>
+    
     
     
 </div>
@@ -34,3 +42,4 @@
 
 
 
+ 

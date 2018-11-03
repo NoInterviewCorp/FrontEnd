@@ -39,9 +39,6 @@ export class TestComponent implements OnInit {
   }
   
    display() {
-     this.selectedTech = this.testService.getTechName();
-     console.log(this.selectedTech);
-     console.log(this.testService.getQuestions());
-     
+     this.testService.getQuestions();
    }
 }

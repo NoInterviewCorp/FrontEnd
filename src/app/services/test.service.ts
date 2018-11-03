@@ -9,27 +9,19 @@ export class TestService {
 
   constructor(private http: HttpClient) { }
 
-  tech : Technology;
+  static tech : Technology;
 
   setTechName(t:Technology) {
-    this.tech=t;
+    
+    TestService.tech=t;
   }
   getTechName() {
-    return this.tech;
+    return TestService.tech;
   }
  
   getQuestions() {
-    // let selectedTech=this.tech.find(x=>x.Name==this.Name);
-    // console.log(this.tech);
-    // if(selectedTopic!=null)
-    // { 
-    //   return selectedTopic.Questions;
-    // }
-    // return null;
-    console.log("ques for:"+this.tech);
-    
-    console.log(this.tech.Questions);
-    
+    // console.log("No of Questions are : "+TestService.tech.Questions );
+    console.log((TestService.tech==null?"NACHO NULL HUA":TestService.tech.Questions));
   }
 
  
