@@ -52,6 +52,14 @@ body {
     flex-wrap: wrap;
     padding-top: 10px;
   }
+  .example-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    align-items: center;
+    align-content: center;
+  }
  
   .flex{
       width: 100%;
@@ -146,8 +154,17 @@ form.example::after {
     background-size: cover;
     position: relative;
   }
-  .hero-image2 {
+  .hero-image1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/contribute.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/blooms.png");
     height: 100%;
     width: 100%;
     background-position: center;
