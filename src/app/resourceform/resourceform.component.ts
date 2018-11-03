@@ -4,8 +4,7 @@ import {MatChipInputEvent} from '@angular/material';
 import {MatBottomSheet} from '@angular/material';
 import { QuestionsComponent } from '../questions/questions.component';
 import { FormGroup, FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
-
-
+import { CommunicatorService } from '../services/communicator.service';
 
 export interface Concept {
   name: string;
@@ -20,9 +19,11 @@ export interface Concept {
 export class ResourceformComponent implements OnInit {
   @Input() id: number;
   @Output() noError = new EventEmitter();
-  constructor(private bottomSheet: MatBottomSheet) { }
+   results:any=[];
+  constructor(private bottomSheet: MatBottomSheet,private com: CommunicatorService) { }
 
   ngOnInit() {
+    this.concept.valueChanges.subscribe(concept=>this.search());
   }
   resourcelink = new FormControl('', [Validators.required]);
   bloomlevel = new FormControl('', [Validators.required]);
@@ -82,5 +83,9 @@ export class ResourceformComponent implements OnInit {
       areAllValid = (areAllValid && this.isValidArray[i]);
     }
     this.noError.emit({ MemberId: this.id, HasError: areAllValid});
+  }
+  search(){
+   this.com.getconcepts().subscribe(res=>this.results=res);
+  console.log(this.results);
   }
 }
