@@ -10,9 +10,9 @@ import { Technology } from '../technology.model';
 })
 export class TestComponent implements OnInit {
 
-   selectedTech : any;
+  selectedTech: any;
 
-  questions = [];
+  questions: any;
   duration = 20; //timer duration
   counter: number = this.duration;
   i: number = 0;
@@ -37,8 +37,65 @@ export class TestComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  display() {
+    //  this.testService.getQuestions();
+    //  this.showTimer = true;
+    //  this.showProgressBar = true;
+    //  this.questions = this.testService.getQuestions();
+    //  console.log(this.testService.getQuestions());
+    //  console.log(this.questions);
+    this.showTimer = true;
+    this.showProgressBar = true;
+    this.questions = this.testService.getQuestions();
+    this.showNextButton = true;
+    this.showQuesButton = false;
+    this.questionCounter = 0;
+    this.currentQuestion = this.questions[this.questionCounter];
+    this.shouldDisplayQuestions = true;
+    this.totalQues = this.questions.length;
+    this.valueInc = 100 / this.totalQues;
+
+    this.gameClock();
+  }
+
+    gameClock() {
+      const intervalMain = setInterval(() => {
+        this.counter--;
+        // console.log("counter:"+this.counter);
+        if (this.counter <= 0) {
+          this.nextQuestion();
+        }
+        //this.resetTimer();}
+        if (this.quesCount == this.totalQues) {
+          clearInterval(intervalMain);
+        }
   
-   display() {
-     this.testService.getQuestions();
-   }
-}
+      }, 1000);
+  
+    }
+
+    nextQuestion() {
+
+      this.resetTimer();
+      console.log(this.selectedOption);
+      this.selectedOption = "";
+      this.questionCounter++;
+      this.currentQuestion = this.questions[this.questionCounter];
+      this.value = this.value + this.valueInc;
+      if (this.quesCount == this.totalQues) {
+        this.showNextButton = false;
+        this.callResult = true;
+        this.showTimer = false;
+        this.showProgressBar = false;
+      }
+    }
+
+    resetTimer() {
+      //this.score+=this.counter*2;
+      this.quesCount++;
+      this.counter = this.duration;
+    }
+
+  }
+

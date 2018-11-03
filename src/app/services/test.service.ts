@@ -22,6 +22,7 @@ export class TestService {
   getQuestions() {
     // console.log("No of Questions are : "+TestService.tech.Questions );
     console.log((TestService.tech==null?"NACHO NULL HUA":TestService.tech.Questions));
+    return TestService.tech.Questions;
   }
 
  
