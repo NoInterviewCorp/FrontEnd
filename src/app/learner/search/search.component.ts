@@ -42,6 +42,9 @@ export class SearchComponent implements OnInit {
   setTech(t:Technology) {
     this.testService.setTechName(t);
     console.log(t.Name);
+    console.log(t.Questions);
+    this.selectedTech=t.Name;
+    
   }
  
   showTechs() {

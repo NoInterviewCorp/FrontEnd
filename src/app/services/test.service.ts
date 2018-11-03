@@ -28,7 +28,7 @@ export class TestService {
     // return null;
     console.log("ques for:"+this.tech);
     
-    console.log(this.tech.questions);
+    console.log(this.tech.Questions);
     
   }
 
