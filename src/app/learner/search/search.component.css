@@ -41,3 +41,9 @@
       margin-left: 40px;
       margin-right:16px
   }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }

@@ -34,10 +34,11 @@ export class SearchComponent implements OnInit {
 
   noToggle() {
     this.popularPlans = this.prefixPopularPlans + this.selectedTech;
+    // console.log(this.selectedTech);
     this.isNoSelected = true;
     this.hasClickedSearch = false;
     this.showSearch = false;
-    console.log(this.popularPlans);
+    // console.log(this.popularPlans);
   }
 
   setTech(t:Technology) {
