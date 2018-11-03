@@ -10,7 +10,6 @@ export class TestService {
   constructor(private http: HttpClient) { }
 
   tech : Technology;
-  sTopic : string;
 
   setTechName(t:Technology) {
     this.tech=t;

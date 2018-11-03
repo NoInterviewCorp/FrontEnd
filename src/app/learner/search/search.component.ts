@@ -41,15 +41,13 @@ export class SearchComponent implements OnInit {
 
   setTech(t:Technology) {
     this.testService.setTechName(t);
+    console.log(t.Name);
   }
-
+ 
   showTechs() {
-      this.http.get('http://localhost:3000/Technology').subscribe((res: any) => {
+    this.http.get('http://localhost:3000/Technology').subscribe((res: any) => {
       this.technology = res;
       console.log(this.technology);
-      this.showBtn = false;
-    }
-   
-  }
-
+  });
+}
 }

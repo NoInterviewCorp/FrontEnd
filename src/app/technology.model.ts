@@ -1,6 +1,6 @@
 import { Questions} from './question.model';
 export class Technology {
     technologyId : number;
-    name : string;
+    Name : string;
     questions : Questions[];
 }
