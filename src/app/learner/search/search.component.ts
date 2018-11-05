@@ -16,6 +16,7 @@ export class SearchComponent implements OnInit {
   hasClickedSearch = false;
   isNoSelected = false;
   showSearch = true;
+  showPopular = false;
   LearningPlan: Array<number> = [1, 2, 3, 4, 5];
   
   technology=[];
@@ -45,7 +46,8 @@ export class SearchComponent implements OnInit {
     this.isNoSelected = true;
     this.hasClickedSearch = false;
     this.showSearch = false;
-    // console.log(this.popularPlans);
+    this.showPopular = true;
+    console.log("called noToggle");
   }
 
   setTech(t:Technology) {

@@ -45,7 +45,10 @@
         <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
     </div>
     
-    
+    <div *ngIf="showPopular">
+    <h1> Popular Plans for: {{selectedTech}}</h1>
+    <app-scrolling-container></app-scrolling-container>
+    </div>
     
 </div>
 

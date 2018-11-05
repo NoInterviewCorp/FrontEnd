@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LearnComponent implements OnInit {
   yourSubscriptions = "Your Subscriptions";
   trendingPlans = "Trending Plans";
+  popular = "Popular Plans";
   constructor() { }
   ngOnInit() {
   }
