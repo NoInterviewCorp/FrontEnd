@@ -16,12 +16,14 @@ export class SearchComponent implements OnInit {
   hasClickedSearch = false;
   isNoSelected = false;
   showSearch = true;
-  showPopular = false;
   LearningPlan: Array<number> = [1, 2, 3, 4, 5];
-  
   technology=[];
   showBtn=true;
+
+  showTech = true;
   ask=false;
+  showPopular = false;
+
 
   constructor(private testService: TestService,private http: HttpClient ) { }
 
@@ -35,19 +37,21 @@ export class SearchComponent implements OnInit {
   }
 
 
-  search() {
-    this.hasClickedSearch = true;
-    this.showSearch = false;
-  }
+  // search() {
+  //   this.hasClickedSearch = true;
+  //   this.showSearch = false;
+  // }
 
   noToggle() {
     this.popularPlans = this.prefixPopularPlans + this.selectedTech;
     // console.log(this.selectedTech);
     this.isNoSelected = true;
     this.hasClickedSearch = false;
-    this.showSearch = false;
+    // this.showSearch = false;
     this.showPopular = true;
-    console.log("called noToggle");
+    this.ask=false;
+    
+    // console.log("called noToggle");
   }
 
   setTech(t:Technology) {
@@ -57,7 +61,7 @@ export class SearchComponent implements OnInit {
     console.log(x.Questions);
     this.selectedTech=t.Name;
     this.ask=true;
-    
+    this.showPopular = false;
   }
  
 //   showTechs() {

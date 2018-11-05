@@ -42,12 +42,12 @@
       margin-right:16px
   }
 
-  .cards {
+  /* .cards {
     display: flex;
-    flex-direction: row;
     align-items: stretch;
-  }
-
+    flex-direction: row;
+  } */
+  
   .scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
