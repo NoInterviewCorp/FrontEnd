@@ -42,7 +42,7 @@
     </div>
   </div> -->
 
-  <div *ngIf="ask">
+  <div class="askq" *ngIf="ask">
     <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
     <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
     <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>

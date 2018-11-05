@@ -51,8 +51,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
  }
+ .cards a:hover{
+  text-decoration: none;
+}
   
   .scrolling-wrapper {
     display: flex;
@@ -62,4 +68,8 @@
   
   .scrolling-wrapper::after{
     margin-right: 10px;
+  }
+
+  .askq {
+    text-align: center;
   }
