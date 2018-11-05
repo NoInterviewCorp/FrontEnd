@@ -16,6 +16,14 @@ export class CommunicatorService {
   }
   getconcepts(){
     return this.http.get('http://localhost:3000/Concept');
+  }
+  postQustions(){
 
+  }
+  postResources(){
+
+  }
+  postLearningPlan(){
+    
   }
 }

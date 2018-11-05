@@ -19,5 +19,7 @@ export class AddlearningplanComponent implements OnInit {
     this.hasClickedAdd = true;
     this.topics.push(++this.lastNumber);
   }
-   
+   postLearningPlan(){
+     
+   }
 }

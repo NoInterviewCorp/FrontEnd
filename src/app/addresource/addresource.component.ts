@@ -45,4 +45,7 @@ export class AddresourceComponent implements OnInit {
       this.hasnoerror = false;
     }
   }
+  postResources(){
+    
+  }
 }
