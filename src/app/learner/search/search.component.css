@@ -50,11 +50,11 @@
   .cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center;
     align-content: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: center; */
+    /* width: 100%; */
  }
  .cards a:hover{
   text-decoration: none;
