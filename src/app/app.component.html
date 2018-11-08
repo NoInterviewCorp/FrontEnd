@@ -1,4 +1,4 @@
-<div class="cont">
+<!-- <div class="cont">
 <mat-toolbar color="primary">
 <div class="flex-container2">
   <div fxShow="true" fxHide.gt-sm="true">
@@ -30,7 +30,7 @@
     </mat-menu>
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
-</div>
+</div> -->
 <!-- <div class="flex3">
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
@@ -45,7 +45,7 @@
         </div>
       </a></div>
   </div> -->
-</div>
+<!-- </div>
 </mat-toolbar>
 <mat-sidenav-container fxFlexFill class="example-container">
 <mat-sidenav color="primary" #sidenav fxLayout="column" mode="side" opened="false" fxHide.gt-sm="true">
@@ -67,10 +67,62 @@
 
 </mat-sidenav-container> 
 
-</div> 
-  <app-home *ngIf="!hasSignedIn"></app-home>
-  <mat-toolbar color="primary"  *ngIf="hasClickedContribute"></mat-toolbar>
+</div>  -->
+
+<div> 
+  <mat-toolbar color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="companyName" *ngIf="!hasSignedIn" routerLink="/profile">
+      <span>PotentiOMeter</span>
+    </a>
+    <a *ngIf="hasSignedIn" mat-button class="companyName" routerLink="/profile">
+      <span>PotentiOMeter</span>
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a *ngIf="!hasSignedIn" mat-button href="#learn">Learn</a>
+    <a  *ngIf="!hasSignedIn" mat-button href="#contribute">Contribute</a>
+    <a  *ngIf="!hasSignedIn" mat-button href="#blooms">Bloom's Taxonomy</a>
+    <a  *ngIf="hasSignedIn" mat-button routerLink="/learner">Learn</a>
+    <a  *ngIf="hasSignedIn" mat-button routerLink="/contribute"  (click)="clickedContribute()">Contribute</a>
+    <button mat-button *ngIf="hasSignedIn" [matMenuTriggerFor]="menu">My Profile</button>
+    <mat-menu #menu>
+        <button mat-menu-item style="font-size: 15px;">View my Profile</button>
+      <button mat-menu-item style="font-size: 15px;">My Reports</button>
+      <button mat-menu-item style="font-size: 15px;">Settings</button>
+      <button mat-menu-item style="font-size: 15px;">Sign Out</button>
+    </mat-menu>
+    <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
+    <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
+    </div>
+
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button routerLink="/about-us">About us</a>
+        <a mat-button routerLink="/prices">Prices</a>
+        <a mat-button routerLink="/start-page">Start page</a>
+        <a mat-button routerLink="/offer">Offer</a>
+        <a mat-button routerLink="/contact">Contact</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <app-home *ngIf="!hasSignedIn"></app-home>
+      <mat-toolbar color="primary"  *ngIf="hasClickedContribute"></mat-toolbar>
   <mat-toolbar color="primary" *ngIf="hasClickedContribute"></mat-toolbar>
-  <router-outlet *ngIf="hasSignedIn"></router-outlet>
+      <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+  <!-- <app-home *ngIf="!hasSignedIn"></app-home> -->
+  
 
     

@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    font-size: 10px;
 }
 .example-form{
     display: flex;
