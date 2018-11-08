@@ -267,3 +267,11 @@ button{
       font-size: 100%;
       text-align: center;
   }
+  .header-image {
+    flex:4;
+    max-width:  150px;
+    max-height: 150px;
+    border-radius: 16px;
+    align-self: center;
+  }
+  

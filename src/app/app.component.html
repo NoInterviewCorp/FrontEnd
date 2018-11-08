@@ -106,6 +106,21 @@
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
       <div fxLayout="column">
+          <img class="header-image" *ngIf="hasSignedIn" src="../../assets/placeholder-team.jpg" />
+          <mat-card class="profile" *ngIf="hasSignedIn">
+              <mat-card-title >John Doe</mat-card-title>
+              <mat-card-subtitle ><em>johndoe</em></mat-card-subtitle>
+              <mat-card-footer class="less-margin">
+                
+              </mat-card-footer>
+            </mat-card>
+          <mat-card-header  *ngIf="hasSignedIn">
+              <mat-card-title >Proficient In</mat-card-title>
+              <mat-card-subtitle ><em>HTML5</em></mat-card-subtitle>
+              <mat-card-subtitle ><em>CSS3</em></mat-card-subtitle>
+              <mat-card-subtitle ><em>.NetCore2.1</em></mat-card-subtitle>
+              <mat-card-subtitle ><em>Angular6</em></mat-card-subtitle>
+            </mat-card-header>
         <a mat-button routerLink="/about-us">About us</a>
         <a mat-button routerLink="/prices">Prices</a>
         <a mat-button routerLink="/start-page">Start page</a>
