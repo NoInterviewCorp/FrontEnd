@@ -16,8 +16,6 @@
   </div>
   
   <div class="flex2" fxShow="true" fxHide.lt-md="true" style="flex-grow: 3">
-    <!-- <a mat-button routerLink="/Learn">Learn</a>
-    <a mat-button routerLink="/Contribute">Contribute</a> -->
     <a *ngIf="!hasSignedIn" mat-button href="#learn">Learn</a>
     <a  *ngIf="!hasSignedIn" mat-button href="#contribute">Contribute</a>
     <a  *ngIf="!hasSignedIn" mat-button href="#blooms">Bloom's Taxonomy</a>
@@ -30,8 +28,6 @@
       <button mat-menu-item style="font-size: 15px;">Settings</button>
       <button mat-menu-item style="font-size: 15px;">Sign Out</button>
     </mat-menu>
-     <!-- <a  *ngIf="hasSignedIn" mat-button href="#blooms">Bloom's Taxonomy</a>  -->
-    <!-- <button mat-button *ngIf="hasSignedIn">My Profile</button> -->
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
 </div>
@@ -74,7 +70,7 @@
 </div> 
   <app-home *ngIf="!hasSignedIn"></app-home>
   <mat-toolbar color="primary"  *ngIf="hasClickedContribute"></mat-toolbar>
-    <mat-toolbar color="primary" *ngIf="hasClickedContribute"></mat-toolbar>
-    <router-outlet *ngIf="hasSignedIn"></router-outlet>
+  <mat-toolbar color="primary" *ngIf="hasClickedContribute"></mat-toolbar>
+  <router-outlet *ngIf="hasSignedIn"></router-outlet>
 
     

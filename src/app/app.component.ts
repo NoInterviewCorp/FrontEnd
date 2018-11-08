@@ -17,6 +17,7 @@ export class AppComponent {
   clickedContribute(){
     this.hasClickedContribute=true;
   }
+  
   handleEvent(event){
     console.log(event);
     this.hasSignedIn  = event;

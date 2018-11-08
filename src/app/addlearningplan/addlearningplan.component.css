@@ -1,3 +1,6 @@
+body{
+    margin: 0px;
+}
 .example-form{
     display: flex;
     flex-direction: column;
@@ -6,32 +9,19 @@
     justify-content: center;
     align-content: center;
     padding-top: 20px;
-    /* width: 60%; */
 }
-
- /* mat-form-field{
-    width: 100%;   
-    padding-right: 20px;
-    padding-left: 20px;
-}  */
 .field{
     width: 100%;
-    padding: 20px;
 }
 .fields{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px; 
+    width: 100%;   
 }
-
 .textarea{
-    width: 100%; 
-     padding-left: 20px;
-     padding-right: 20px; 
+    width: 100%;     
 }
 .accordian{
     display: flex;

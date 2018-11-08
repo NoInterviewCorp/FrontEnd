@@ -1,4 +1,3 @@
-import {MatBottomSheetRef} from '@angular/material';
 import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 //import { SMEService } from '../../services/sme.service';
@@ -19,14 +18,11 @@ export class QuestionsComponent implements OnInit {
   hasnoerror: boolean = false;
   hasClickedAdd: boolean = false;
   hasAdded5Qs: boolean = false;
-  constructor(private bottomSheetRef: MatBottomSheetRef<QuestionsComponent>) { }
+  constructor() { }
 //private bottomSheetRef: MatBottomSheetRef<QuestionsComponent>
   ngOnInit() {
   }
-  openLink(event: MouseEvent): void {
-    this.bottomSheetRef.dismiss();
-    event.preventDefault();
-  }
+  
 
   onClick() {
     let result: boolean;

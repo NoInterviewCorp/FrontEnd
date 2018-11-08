@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material';
-import {MatBottomSheet} from '@angular/material';
 import { QuestionsComponent } from '../questions/questions.component';
 import { FormGroup, FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { CommunicatorService } from '../services/communicator.service';
@@ -20,7 +19,7 @@ export class ResourceformComponent implements OnInit {
   @Input() id: number;
   @Output() noError = new EventEmitter();
    results:any=[];
-  constructor(private bottomSheet: MatBottomSheet,private com: CommunicatorService) { }
+  constructor(private com: CommunicatorService) { }
 
   ngOnInit() {
     this.concept.valueChanges.subscribe(concept=>this.search());
@@ -53,11 +52,7 @@ export class ResourceformComponent implements OnInit {
       this.concepts.splice(index, 1);
     }
   }
-  openBottomSheet(): void {
-    this.bottomSheet.open(QuestionsComponent, {
-      panelClass: 'custom-width'
-    });
-  }
+  
 
   getErrorMessage() {
     this.noError.emit({ MemberId: this.id, HasError: false });
