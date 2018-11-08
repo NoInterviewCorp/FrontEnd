@@ -13,6 +13,10 @@ export class AppComponent {
   hasSignedIn = false;
   content = [1, 2, 3, 4]
   title = 'PotentiOMeter';
+  hasClickedContribute:boolean;
+  clickedContribute(){
+    this.hasClickedContribute=true;
+  }
   handleEvent(event){
     console.log(event);
     this.hasSignedIn  = event;

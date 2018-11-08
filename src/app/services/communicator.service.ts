@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CommunicatorService {
   private title:string;
+  hasClickedAddResources:boolean;
   constructor(private http: HttpClient) { }
   getTitle(){
     return this.title;
@@ -17,7 +18,7 @@ export class CommunicatorService {
   getconcepts(){
     return this.http.get('http://localhost:3000/Concept');
   }
-  postQustions(){
+  postQuestions(){
 
   }
   postResources(){
@@ -26,4 +27,6 @@ export class CommunicatorService {
   postLearningPlan(){
     
   }
+  
+  
 }

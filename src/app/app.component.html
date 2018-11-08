@@ -22,7 +22,7 @@
     <a  *ngIf="!hasSignedIn" mat-button href="#contribute">Contribute</a>
     <a  *ngIf="!hasSignedIn" mat-button href="#blooms">Bloom's Taxonomy</a>
     <a  *ngIf="hasSignedIn" mat-button routerLink="/learner">Learn</a>
-    <a  *ngIf="hasSignedIn" mat-button routerLink="/contribute">Contribute</a>
+    <a  *ngIf="hasSignedIn" mat-button routerLink="/contribute"  (click)="clickedContribute()">Contribute</a>
     <button mat-button *ngIf="hasSignedIn" [matMenuTriggerFor]="menu">My Profile</button>
     <mat-menu #menu>
         <button mat-menu-item style="font-size: 15px;">View my Profile</button>
@@ -59,7 +59,7 @@
       <button type="submit">Submit</button>
     </form>
     <a mat-button routerLink="/Learn">Learn</a>
-    <a mat-button routerLink="/Contribute">Contribute</a>
+    <a mat-button routerLink="/contribute">Contribute</a>
     <button mat-button (click)="openDialog(true)">LogIn</button>
     <button mat-button (click)="openDialog(false)">SignUp</button>
   </div>
@@ -73,5 +73,8 @@
 
 </div> 
   <app-home *ngIf="!hasSignedIn"></app-home>
+  <mat-toolbar color="primary"  *ngIf="hasClickedContribute"></mat-toolbar>
+    <mat-toolbar color="primary" *ngIf="hasClickedContribute"></mat-toolbar>
     <router-outlet *ngIf="hasSignedIn"></router-outlet>
 
+    
