@@ -6,6 +6,10 @@
 
     ],
     "Concept":[
-        {"name":"C"}, {"name":"C++"},{"name":"C#"}
-           ]
+        {"name":"OOPS"}, {"name":"File Handling"},{"name":"API"},{"name": "Loops"}
+    ],
+    "Technology":[
+        {"name":"C"}, {"name":"C++"},{"name":"C#"},{"name": "JAVA"}
+    ]
+           
 }

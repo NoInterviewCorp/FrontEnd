@@ -12,6 +12,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { AddresourceComponent } from './addresource/addresource.component';
 import { AddlearningplanComponent } from './addlearningplan/addlearningplan.component';
 import { LearnComponent } from './learn/learn.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   //{path: 'home',component: HomeComponent},
@@ -21,7 +22,9 @@ const routes: Routes = [
   { path: 'addresource', component: AddresourceComponent },
   { path: 'addlearningplan', component: AddlearningplanComponent },
   { path: 'test', component: TestComponent },
-  {path: 'learner', component: LearnerComponent}
+  { path: 'home' , component: AppComponent},
+  {path: 'learner', component: LearnerComponent},
+  {path: 'profilepage',component: ProfileComponent}
 ];
 
 @NgModule({

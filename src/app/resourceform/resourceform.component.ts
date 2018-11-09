@@ -5,6 +5,7 @@ import { QuestionsComponent } from '../questions/questions.component';
 import { FormGroup, FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { CommunicatorService } from '../services/communicator.service';
 
+
 export interface Concept {
   name: string;
 }
@@ -22,7 +23,7 @@ export class ResourceformComponent implements OnInit {
   constructor(private com: CommunicatorService) { }
 
   ngOnInit() {
-    this.concept.valueChanges.subscribe(concept=>this.search());
+    // this.concept.valueChanges.subscribe(concept=>this.conceptSearch());
   }
   resourcelink = new FormControl('', [Validators.required]);
   bloomlevel = new FormControl('', [Validators.required]);
@@ -79,8 +80,8 @@ export class ResourceformComponent implements OnInit {
     }
     this.noError.emit({ MemberId: this.id, HasError: areAllValid});
   }
-  search(){
-   this.com.getconcepts().subscribe(res=>this.results=res);
-  console.log(this.results);
-  }
+  // conceptSearch(){
+  //  this.com.getconcepts().subscribe(res=>this.results=res);
+  // console.log(this.results);
+  // }
 }
