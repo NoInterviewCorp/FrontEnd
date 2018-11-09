@@ -4,7 +4,8 @@
     <button mat-raised-button color="primary" *ngIf="showQuesButton" (click)="display()">Show Questions</button><br><br>
     </div>
     
-    <div *ngIf="showTimer" class="badge">Time Left: {{counter}}</div>
+    <!-- <div *ngIf="showTimer" class="badge">Time Left: {{counter}}</div> -->
+    <div class="timr" *ngIf="showTimer"> {{counter}}</div>
     
     <div *ngIf="showProgressBar">
     <section class="progressbar-section">

@@ -1,56 +1,56 @@
 <!-- <div class="flex-container" *ngIf=showSearch>
-  <form class="form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Enter technology" name="tech" [(ngModel)]="selectedTech">
-    </mat-form-field>
-    <br>
-    <button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button>
-  </form>
+<form class="form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter technology" name="tech" [(ngModel)]="selectedTech">
+  </mat-form-field>
+  <br>
+  <button class="button-flex" mat-raised-button color="primary" (click)="search()">Search</button>
+</form>
 </div>
 <div class="flex1">
-  <div class="flex" *ngIf="hasClickedSearch">
-    <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
-    <div class="wrapper">
-      <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" (click)="setTech(selectedTech)">Yes</button>
-      <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
-    </div>
+<div class="flex" *ngIf="hasClickedSearch">
+  <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+  <div class="wrapper">
+    <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active" (click)="setTech(selectedTech)">Yes</button>
+    <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
   </div>
+</div>
 </div>
 <app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container> -->
 
 <div>
-  <!-- <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button> -->
-  <div  class="cards">
-      <div class="scrolling-wrapper">
-    <div *ngFor="let tech of technology">
-       
-      <div  *ngIf="showTech">
-        
-        <a [routerLink]="" (click)="setTech(tech)">
-          <app-card [name]="tech.Name"></app-card>
-        </a>
-      </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="cards">
+<!-- <button class="button-flex" mat-raised-button color="primary" (click)="showTechs()" *ngIf="showBtn">Show Technologies</button> -->
+<div  class="cards">
     <div class="scrolling-wrapper">
+  <div *ngFor="let tech of technology">
+      
+    <div  *ngIf="showTech">
+      
       <a [routerLink]="" (click)="setTech(tech)">
-        <app-card *ngFor="let tech of technology" [name]="tech.Name">
-        </app-card>
+        <app-card [name]="tech.Name"></app-card>
       </a>
     </div>
-  </div> -->
-
-  <div class="askq" *ngIf="ask">
-    <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
-    <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
-    <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
+    </div>
   </div>
-
-  <div *ngIf="showPopular">
-    <h1> Popular Plans for {{selectedTech}} >></h1>
-    <app-scrolling-container></app-scrolling-container>
+</div>
+<!-- <div class="cards">
+  <div class="scrolling-wrapper">
+    <a [routerLink]="" (click)="setTech(tech)">
+      <app-card *ngFor="let tech of technology" [name]="tech.Name">
+      </app-card>
+    </a>
   </div>
+</div> -->
+
+<div class="askq" *ngIf="ask">
+  <h2 class="mat-display-1"> Do you have prior knowledge of {{selectedTech}} ?</h2>
+  <button class="button-flex" mat-raised-button color="primary" routerLink="/test" routerLinkActive="active">Yes</button>
+  <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No</button>
+</div>
+
+<div *ngIf="showPopular">
+  <h1> Popular Plans for {{selectedTech}} >></h1>
+  <app-scrolling-container></app-scrolling-container>
+</div>
 
 </div>
