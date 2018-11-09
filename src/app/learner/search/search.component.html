@@ -21,6 +21,6 @@
       <button class="button-flex" mat-raised-button color="primary" (click)="noToggle()">No,I want to learn</button>
     </div>
   </div>
-  </div>
-
+  </div><br><br>
+  <app-learn *ngIf="!isNoSelected"></app-learn>
 <app-scrolling-container *ngIf="isNoSelected" [header]="popularPlans"></app-scrolling-container>
