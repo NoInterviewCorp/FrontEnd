@@ -1,4 +1,4 @@
-<div> 
+<div class="cont"> 
   <mat-toolbar >
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
@@ -32,7 +32,7 @@
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
     </div>
 
-  </mat-toolbar>
+  </mat-toolbar><br><br><br>
   <mat-sidenav-container fxFlexFill class="example-container">
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">

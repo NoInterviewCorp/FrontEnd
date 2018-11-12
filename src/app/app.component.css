@@ -219,14 +219,14 @@ a{
 
 .topnav .search-container button:hover {
   background: #ccc;
-}
-.cont{
+}*/
+/* .cont{
     position: fixed;
     z-index: 99999;
     top:0;
      height:100%; 
     width:100%;
-} */
+}  */
 
 .companyName{
     font-size: 150%;
@@ -234,9 +234,13 @@ a{
 }
 
 .mat-toolbar{
-  height: 11vh;
-  background-color: black
+    position: fixed;
+    z-index: 99999;
+    /* top:0; */
+    height: 11vh;
+    background-color: black;
 }
+
 
 div {
     overflow: inherit;
@@ -247,6 +251,7 @@ div {
 }
 mat-sidenav{
     background-color: black;
+    padding-top: 20px;
 }
 
 a{
