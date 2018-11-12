@@ -1,5 +1,5 @@
 <div> 
-  <mat-toolbar color="primary">
+  <mat-toolbar >
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
@@ -23,10 +23,10 @@
         <img class="header-image" src="../../assets/placeholder-team.jpg" style="height: 50px; width: 50px;" />
     </button>
     <mat-menu #menu>      
-      <button mat-menu-item routerLink="/profilepage" style="font-size: 15px;">View my Profile</button>
-      <button mat-menu-item style="font-size: 15px;">My Reports</button>
-      <button mat-menu-item style="font-size: 15px;">Settings</button>
-      <button mat-menu-item style="font-size: 15px;">Sign Out</button>
+      <button mat-menu-item routerLink="/profilepage" style="font-size: 15px;color: black"><b>View my Profile</b></button>
+      <button mat-menu-item style="font-size: 15px;color: black"><b>My Reports</b></button>
+      <button mat-menu-item style="font-size: 15px;color: black"><b>Settings</b></button>
+      <button mat-menu-item style="font-size: 15px;color: black"><b>Sign Out</b></button>
     </mat-menu>
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(true)">LogIn</button>
     <button mat-button *ngIf="!hasSignedIn" (click)="openDialog(false)">SignUp</button>
