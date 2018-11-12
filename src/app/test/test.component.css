@@ -38,6 +38,7 @@
   padding-top: 50px;
 } */
 
+/* new css */
 
 .timr {
   display: flex;
@@ -49,3 +50,25 @@
     background-color: orange;
     color: #fff;
 }
+
+.timer-container {
+  display: flex;
+  padding: 10px;
+}
+
+.test {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    height: auto;
+    padding: 10px;
+}
+
+.test-box {
+  width: 70vw;
+  height: auto;
+  padding-bottom: 50px;
+}
+
