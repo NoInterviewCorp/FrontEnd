@@ -13,6 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatExpansionModule, MatBottomSheetModule, MatTooltipModule } from '@angular/material';
 
 
@@ -40,7 +41,8 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     ReactiveFormsModule,
     MatTooltipModule,
     MatProgressBarModule,
-    MatRadioModule
+    MatRadioModule,
+    MatPaginatorModule
   ],
   exports: [
     CommonModule,
@@ -64,7 +66,8 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     ReactiveFormsModule,
     MatTooltipModule,
     MatProgressBarModule,
-    MatRadioModule
+    MatRadioModule,
+    MatPaginatorModule
   ],
   declarations: []
 })
