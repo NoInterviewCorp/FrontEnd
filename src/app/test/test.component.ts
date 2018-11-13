@@ -13,7 +13,7 @@ export class TestComponent implements OnInit {
   selectedTech: any;
 
   questions: any;
-  duration = 20; //timer duration
+  duration = 1000; //timer duration
   counter: number = this.duration;
   i: number = 0;
   questionCounter = 0;

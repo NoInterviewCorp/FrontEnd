@@ -42,9 +42,10 @@ export class SearchComponent implements OnInit {
   //   this.showSearch = false;
   // }
 
-  noToggle() {
+  noToggle(t:Technology) {
+    this.setTech(t);
     this.popularPlans = this.prefixPopularPlans + this.selectedTech;
-    // console.log(this.selectedTech);
+    console.log("selected tech for learning:"+this.selectedTech);
     this.isNoSelected = true;
     this.hasClickedSearch = false;
     // this.showSearch = false;
@@ -57,8 +58,8 @@ export class SearchComponent implements OnInit {
   setTech(t:Technology) {
     this.testService.setTechName(t);
     let x  = this.testService.getTechName();
-    console.log("techname:"+x.Name);
-    console.log(x.Questions);
+    // console.log("techname:"+x.Name);
+    // console.log(x.Questions);
     this.selectedTech=t.Name;
     this.ask=true;
     this.showPopular = false;
