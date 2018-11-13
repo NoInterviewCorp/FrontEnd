@@ -53,6 +53,9 @@
         <a mat-button *ngIf="!hasSignedIn" href="#learn" style="font-size: 15px;">Learn</a>
         <a mat-button *ngIf="!hasSignedIn" href="#contribute" style="font-size: 15px;">Contribute</a>
         <a mat-button *ngIf="!hasSignedIn" href="#blooms" style="font-size: 15px;">Bloom's Taxonomy</a>
+        <a mat-button *ngIf="!hasSignedIn" style="font-size: 15px;" (click)="openDialog(true)">LogIn</a>
+        <a mat-button *ngIf="!hasSignedIn" style="font-size: 15px;" (click)="openDialog(false)">SignUp</a>
+
 
       </div>
     </mat-sidenav>

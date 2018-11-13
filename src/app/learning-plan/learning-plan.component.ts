@@ -19,8 +19,7 @@ export class LearningPlanComponent implements OnInit {
     resources: ['link', 'link', 'link', 'link', 'link', 'link', 'link', 'link', 'link', 'link']
   }
   data: string[] = [];
-  show:boolean = false;
-  buttonName:any = 'Show';
+  
   constructor() {
     for (let index = 0; index < 2; index++) {
       this.data.push(this.plan.resources[index]);
@@ -29,13 +28,5 @@ export class LearningPlanComponent implements OnInit {
 
   ngOnInit() {
   }
-  toggle() {
-    this.show = !this.show;
-
-    // CHANGE THE NAME OF THE BUTTON.
-    if(this.show)  
-      this.buttonName = "Hide";
-    else
-      this.buttonName = "Show";
-  }
+  
 }
