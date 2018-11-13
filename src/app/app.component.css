@@ -1,4 +1,6 @@
-
+/* body{
+    margin: 0px;
+}
 .d-block
 {
     width:100%;
@@ -122,7 +124,7 @@ form.example::after {
   font-size: 17px;
   border: none;
   cursor: pointer;
-}
+} 
 
 .topnav .search-container button:hover {
   background: #ccc;
@@ -132,3 +134,156 @@ form.example::after {
     top:0;
     width:100%;
 }
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.flex0{
+width: 70%
+}
+ .flex2{
+    width: 30%;
+}*/
+/* .flex3{
+    width: 55%;
+    flex: 50% 
+} */
+
+/* button{
+    font-size: 20px;
+    min-width: min-content;
+}
+a{
+    font-size: 20px;
+}
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-sidenav-content{
+      font-size: 200%;
+      text-align: center;
+} 
+ 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+ 
+  .flex{
+      width: 100%;
+  }
+  .flex-container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+ 
+  .flex1{
+      width: 25%;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 18px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 18px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}*/
+/* .cont{
+    position: fixed;
+    z-index: 99999;
+    top:0;
+     height:100%; 
+    width:100%;
+}  */
+
+.companyName{
+    font-size: 150%;
+    color: aliceblue;
+}
+
+.mat-toolbar{
+    position: fixed;
+    z-index: 99999;
+    /* top:0; */
+    height: 11vh;
+    background-color: black;
+}
+
+
+div {
+    overflow: inherit;
+}
+
+.mat-sidenav-container{
+  min-height: 93vh !important;
+}
+mat-sidenav{
+    background-color: black;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 110%;
+    white-space: normal;
+    color: aliceblue;
+}
+
+button{
+    font-size: 110%;
+    min-width: min-content;
+    color: aliceblue;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-sidenav-content{
+      font-size: 100%;
+      text-align: center;
+  }
+  .header-image {
+    flex:4;
+    max-width:  150px;
+    max-height: 150px;
+    border-radius: 16px;
+    align-self: center;
+  }
+  

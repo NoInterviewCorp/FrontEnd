@@ -35,6 +35,8 @@ import { QuestionformComponent } from './questionform/questionform.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './learner/card/card.component';
+import { AddtopicComponent } from './addtopic/addtopic.component';
+
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -73,7 +75,7 @@ export function getAuthServiceConfigs() {
     ResourceformComponent,
     QuestionformComponent,
     QuestionsComponent,
-    CardComponent
+    AddtopicComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,8 @@ export function getAuthServiceConfigs() {
     LayoutModule,
     NgMatSearchBarModule,
     FlexLayoutModule,
-    NgMatSearchBarModule
+    NgMatSearchBarModule,
+    HttpClientModule
   ],
   entryComponents:[
     SignInComponent

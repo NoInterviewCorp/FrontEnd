@@ -1,10 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material';
-import {MatBottomSheet} from '@angular/material';
 import { QuestionsComponent } from '../questions/questions.component';
 import { FormGroup, FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
-
+import { CommunicatorService } from '../services/communicator.service';
 
 
 export interface Concept {
@@ -20,9 +19,11 @@ export interface Concept {
 export class ResourceformComponent implements OnInit {
   @Input() id: number;
   @Output() noError = new EventEmitter();
-  constructor(private bottomSheet: MatBottomSheet) { }
+   results:any=[];
+  constructor(private com: CommunicatorService) { }
 
   ngOnInit() {
+    // this.concept.valueChanges.subscribe(concept=>this.conceptSearch());
   }
   resourcelink = new FormControl('', [Validators.required]);
   bloomlevel = new FormControl('', [Validators.required]);
@@ -52,11 +53,7 @@ export class ResourceformComponent implements OnInit {
       this.concepts.splice(index, 1);
     }
   }
-  openBottomSheet(): void {
-    this.bottomSheet.open(QuestionsComponent, {
-      panelClass: 'custom-width'
-    });
-  }
+  
 
   getErrorMessage() {
     this.noError.emit({ MemberId: this.id, HasError: false });
@@ -83,4 +80,8 @@ export class ResourceformComponent implements OnInit {
     }
     this.noError.emit({ MemberId: this.id, HasError: areAllValid});
   }
+  // conceptSearch(){
+  //  this.com.getconcepts().subscribe(res=>this.results=res);
+  // console.log(this.results);
+  // }
 }

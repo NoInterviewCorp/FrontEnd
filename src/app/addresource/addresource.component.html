@@ -1,16 +1,17 @@
+
 <div class="accordian">
 <mat-accordion>
         <app-resourceform *ngFor="let index of resources" [id]="index" (noError)="handleEventEmitter($event)"></app-resourceform><br><br>
 </mat-accordion>
 <div class="buttons">
 <div>
-        <button mat-raised-button color="primary" routerLink="/contribute" routerLinkActive="active">Submit</button>
+        <button mat-raised-button color="black" routerLink="/profile" routerLinkActive="active" (click()="postResources()">Submit</button>
  </div>
  <div>
-        <button mat-raised-button color="primary" (click)="addResource()">Add</button>
+        <button mat-raised-button color="black" (click)="addResource()">Add</button>
  </div>
  <div>
-                <button mat-raised-button color="primary" (click)="onClick()">save</button>
+                <button mat-raised-button color="black" (click)="onClick()">save</button>
          </div>
  </div>
  </div>
