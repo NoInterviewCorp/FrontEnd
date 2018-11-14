@@ -15,7 +15,6 @@ export class AddlearningplanComponent implements OnInit {
   ngOnInit() {
   }
   addResource() {
-    //console.log("clicked");
     this.hasClickedAdd = true;
     this.topics.push(++this.lastNumber);
   }
