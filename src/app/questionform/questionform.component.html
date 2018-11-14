@@ -37,16 +37,16 @@
     </div>
     <div style="flex-grow: 3">
   
-    <mat-form-field class="example-full-width">
+    <!-- <mat-form-field class="example-full-width">
       <input matInput placeholder="Give a Resource Link" [formControl]="resourcelink" required>
       <mat-error *ngIf="resourcelink.invalid">{{getErrorMessage5()}}</mat-error>
       <mat-error *ngIf="resourcelink.valid">{{getValidMessage(5)}}</mat-error>
-    </mat-form-field><br><br><br>
+    </mat-form-field><br><br><br> -->
   
     <mat-form-field>
       <mat-select [(value)]="selected" placeholder="Give Bloom's Taxanomy Level" [formControl]="bloomlevel" required>
-        <mat-error *ngIf="bloomlevel.invalid">{{getErrorMessage6()}}</mat-error>
-        <mat-error *ngIf="bloomlevel.valid">{{getValidMessage(6)}}</mat-error>
+        <mat-error *ngIf="bloomlevel.invalid">{{getErrorMessage5()}}</mat-error>
+        <mat-error *ngIf="bloomlevel.valid">{{getValidMessage(5)}}</mat-error>
         <mat-option value="1">Knowledge</mat-option>
         <mat-option value="2">Comprehension</mat-option>
         <mat-option value="3">Application</mat-option>

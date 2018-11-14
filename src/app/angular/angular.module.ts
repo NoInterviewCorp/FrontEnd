@@ -11,8 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatExpansionModule, MatBottomSheetModule, MatTooltipModule } from '@angular/material';
-
 
 
 @NgModule({
@@ -36,7 +38,10 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatExpansionModule,
     MatBottomSheetModule,
     ReactiveFormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatProgressBarModule,
+    MatRadioModule,
+    MatPaginatorModule
   ],
   exports: [
     CommonModule,
@@ -58,7 +63,10 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatExpansionModule,
     MatBottomSheetModule,
     ReactiveFormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatProgressBarModule,
+    MatRadioModule,
+    MatPaginatorModule
   ],
   declarations: []
 })

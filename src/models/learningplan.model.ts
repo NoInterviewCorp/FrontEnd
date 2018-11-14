@@ -1,10 +1,10 @@
 export class LearningPlan{
-    learningPlanId:number;
-    technology:string;
-    summary:string;
-    upVotes:number;
-    downVotes:number;
-    resources:string[];
-    owner:string;
-    avatar:string;
+    LearningPlanId:number;
+    Technology:string;
+    Summary:string;
+    UpVotes:number;
+    DownVotes:number;
+    Resources:string[];
+    Owner:string;
+    Avatar:string;
 }

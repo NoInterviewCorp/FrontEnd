@@ -33,6 +33,13 @@ import { AddresourceComponent } from './addresource/addresource.component';
 import { ResourceformComponent } from './resourceform/resourceform.component';
 import { QuestionformComponent } from './questionform/questionform.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './learner/card/card.component';
+import { AddtopicComponent } from './addtopic/addtopic.component';
+import { SubscribecardComponent } from './scrolling-container/subscribecard/subscribecard.component';
+import { YoursubscriptionscardComponent } from './scrolling-container/yoursubscriptionscard/yoursubscriptionscard.component';
+import { YourcontributionscardComponent } from './scrolling-container/yourcontributionscard/yourcontributionscard.component';
+
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
@@ -70,10 +77,15 @@ export function getAuthServiceConfigs() {
     AddresourceComponent,
     ResourceformComponent,
     QuestionformComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    AddtopicComponent,
+    SubscribecardComponent,
+    YoursubscriptionscardComponent,
+    YourcontributionscardComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularModule,
     AppRoutingModule,
     SocialLoginModule,
@@ -81,7 +93,8 @@ export function getAuthServiceConfigs() {
     LayoutModule,
     NgMatSearchBarModule,
     FlexLayoutModule,
-    NgMatSearchBarModule
+    NgMatSearchBarModule,
+    HttpClientModule
   ],
   entryComponents:[
     SignInComponent

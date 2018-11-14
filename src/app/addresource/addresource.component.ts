@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ErrorStatus } from '../questions/errorstatus.model';
 
-
 @Component({
   selector: 'app-addresource',
   templateUrl: './addresource.component.html',
@@ -44,5 +43,8 @@ export class AddresourceComponent implements OnInit {
       this.haserror = true;
       this.hasnoerror = false;
     }
+  }
+  postResources(){
+    
   }
 }
