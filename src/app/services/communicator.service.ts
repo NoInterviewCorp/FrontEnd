@@ -27,6 +27,9 @@ export class CommunicatorService {
   postLearningPlan(){
     
   }
+  getYourSubs() {
+    return this.http.get('http://localhost:3000/LearningPlan');
+  }
   
   
 }
