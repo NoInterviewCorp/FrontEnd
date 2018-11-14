@@ -8,6 +8,7 @@ import { LearningPlan } from 'src/models/learningplan.model';
 })
 export class SubscribecardComponent implements OnInit {
  @Input() plan: LearningPlan[];
+ @Input() links:string[]= [];
   constructor() { }
 
   ngOnInit() {
