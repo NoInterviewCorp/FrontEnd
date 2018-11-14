@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learn.component.css']
 })
 export class LearnComponent implements OnInit {
-  yourSubscriptions = "Your Subscriptions";
-  trendingPlans = "Trending Plans";
-  popular = "Popular Plans";
   constructor() { }
   ngOnInit() {
   }

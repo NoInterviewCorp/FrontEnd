@@ -202,6 +202,44 @@
     ],
     
     "LearningPlan" :[
+        {
+            "LearningPlanID": 1,
+            "Avatar":"../../assets/placeholder-team.jpg",
+            "DownVotes": 1,
+            "UpVotes": 33,
+            "Owner": "Jack",
+            "Summary": "C# learning plan suited for beginners, experts.C# learning plan suited for beginners, expertsC# learning plan suited for beginners, expertsC# learning plan suited for beginners, experts",
+            "Technology": "C#",
+            "Resources": [
+                    "link","link","link"
+            ]
+        },
+ 
+        {
+            "LearningPlanID": 2,
+            "Avatar":"../../assets/placeholder-team.jpg",
+            "DownVotes": 5,
+            "UpVotes": 96,
+            "Owner": "John",
+            "Summary": "C learning plan suited for beginners, experts.learning plan suited for beginners, expertsC learning plan suited for beginners, experts",
+            "Technology": "C",
+            "Resources": [
+                    "link","link","link"
+            ]
+        },
+ 
+        {
+            "LearningPlanID": 3,
+            "Avatar":"../../assets/placeholder-team.jpg",
+            "DownVotes": 15,
+            "UpVotes": 22,
+            "Owner": "Max",
+            "Summary": "Java learning plan suited for beginners, experts.",
+            "Technology": "Java",
+            "Resources": [
+                    "link","link","link","link"
+            ]
+        }
     
     ],
     "Concept":[

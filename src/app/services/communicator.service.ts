@@ -18,6 +18,15 @@ export class CommunicatorService {
   getconcepts(){
     return this.http.get('http://localhost:3000/Concept');
   }
+  getContributions(){
+    return this.http.get('http://localhost:3000/LearningPlan')
+  }
+  getSubscriptions(){
+    return this.http.get('http://localhost:3000/LearningPlan')
+  }
+  getPopularPlans(){
+    return this.http.get('http://localhost:3000/LearningPlan')
+  }
   postQuestions(){
 
   }
