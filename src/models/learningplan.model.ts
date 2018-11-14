@@ -7,4 +7,5 @@ export class LearningPlan{
     Resources:string[];
     Owner:string;
     Avatar:string;
+    Concepts:string[];
 }

@@ -211,8 +211,10 @@
             "Summary": "C# learning plan suited for beginners, experts.C# learning plan suited for beginners, expertsC# learning plan suited for beginners, expertsC# learning plan suited for beginners, experts",
             "Technology": "C#",
             "Resources": [
-                    "link","link","link"
-            ]
+                    "link1","link2","link3"
+            ],
+            "Concepts": ["Loops","OOPS Concepts","Collections"]
+            
         },
         {
             "LearningPlanID": 2,
@@ -223,8 +225,10 @@
             "Summary": "C learning plan suited for beginners, experts.learning plan suited for beginners, expertsC learning plan suited for beginners, experts",
             "Technology": "C",
             "Resources": [
-                    "link","link","link"
-            ]
+                    "link4","link5","link6"
+            ],
+            "Concepts": ["Loops","OOPS Concepts","Collections"]
+
         },
         {
             "LearningPlanID": 3,
@@ -235,8 +239,9 @@
             "Summary": "Java learning plan suited for beginners, experts.",
             "Technology": "Java",
             "Resources": [
-                    "link","link","link","link"
-            ]
+                    "link7","link8","link9","link10"
+            ],
+            "Concepts": ["Loops","OOPS Concepts","Collections"]
         }
     
     ],

@@ -10,18 +10,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ScrollingContainerComponent implements OnInit {
 plan: LearningPlan[];
+// links: string[]= [];
  @Input() choice: number;
   constructor(private com:CommunicatorService,private http:HttpClient) { }
 
   ngOnInit() {
     this.getPlans();
   }
-// getContribution(){
-//   this.com.getContributions().subscribe((res:any)=>{
-//     this.plan=res;
-//     console.log(res);
-//   });
-// }
 getPlans(){
   switch(this.choice) {
     case 1: {
