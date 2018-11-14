@@ -8,7 +8,7 @@ import { CommunicatorService } from 'src/app/services/communicator.service';
 })
 export class YoursubscriptionsComponent implements OnInit {
 
-  constructor(private http: HttpClient,private com:CommunicatorService) { }
+  constructor(private http: HttpClient, private com: CommunicatorService) { }
 
   subs = [];
   ngOnInit() {
@@ -17,8 +17,11 @@ export class YoursubscriptionsComponent implements OnInit {
   //     this.subs = res;
   //     console.log(this.subs);
   // });
-  this.com.getYourSubs().subscribe((res:any)=>{this.subs=res;
-  console.log(this.subs)});
+  this.com.getYourSubs().subscribe((res: any) => 
+  { this.subs=res;
+    console.log(this.subs)
+    });
   }
-
 }
+
+

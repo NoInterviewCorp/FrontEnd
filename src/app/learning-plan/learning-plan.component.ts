@@ -8,7 +8,7 @@ import { resource } from 'selenium-webdriver/http';
   styleUrls: ['./learning-plan.component.css']
 })
 export class LearningPlanComponent implements OnInit {
-  plan: LearningPlan = {
+    plan: LearningPlan = {
     learningPlanId: 1,
     avatar: "../../assets/placeholder-team.jpg",
     downVotes: 5,

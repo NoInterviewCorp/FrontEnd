@@ -1,0 +1,28 @@
+<div *ngFor = "let sub of subs">
+<mat-card class="subsCard">
+
+    <mat-card-header>
+        <img mat-card-avatar [src]="sub.Avatar"/>
+        <mat-card-title class="subsCardTitle">
+            {{sub.Technology}}
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-subtitle>
+        <em>-by {{sub.Owner}}</em>
+    </mat-card-subtitle>
+
+    <mat-card-content>
+            <mat-expansion-panel class="mat-elevation-z0">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Summary and Course
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                    {{sub.Summary}}
+                </p>
+    </mat-card-content>
+</mat-card>
+</div>
+
