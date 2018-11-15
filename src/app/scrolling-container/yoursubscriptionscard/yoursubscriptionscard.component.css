@@ -40,3 +40,8 @@ a{
 mat-accordian{
     width:300px;
 }
+
+.btn {
+    width: 50%;
+    
+}

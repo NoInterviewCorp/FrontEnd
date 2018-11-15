@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatExpansionModule, MatBottomSheetModule, MatTooltipModule } from '@angular/material';
 
 
@@ -41,6 +42,7 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatTooltipModule,
     MatProgressBarModule,
     MatRadioModule,
+    MatCheckboxModule,
     MatPaginatorModule
   ],
   exports: [
@@ -66,6 +68,7 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatTooltipModule,
     MatProgressBarModule,
     MatRadioModule,
+    MatCheckboxModule,
     MatPaginatorModule
   ],
   declarations: []
