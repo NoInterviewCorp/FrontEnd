@@ -73,7 +73,7 @@ mat-form-field{
     text-align : center;
 }
 
-  .scrolling-wrapper {
+  /* .scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -81,7 +81,7 @@ mat-form-field{
   
   .scrolling-wrapper::after{
     margin-right: 10px;
-  }
+  } */
 
   .askq {
     text-align: center;
