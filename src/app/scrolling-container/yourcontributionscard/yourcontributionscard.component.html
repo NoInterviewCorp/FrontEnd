@@ -7,18 +7,25 @@
       <mat-card-subtitle>
         <em>-by {{plan?.Owner}}</em>
       </mat-card-subtitle>
+      <div style="padding-left: 110px;">
+      <button mat-button [routerLink]=''>
+        EDIT
+      </button>
+      </div>
     </mat-card-header>
-   
     <mat-card-content >
-      <!-- <p>
-        {{plan?.summary}}
-      </p>
-      <h3>
-        Course Content:
-      </h3>
-      <p *ngFor="let item of data">
-        <a routerLink=''>{{item}}</a>
-      </p> -->
+      <div class="votes">
+        <h4>
+          <a [routerLink]="">
+            <mat-icon>thumb_up</mat-icon>
+          </a> {{plan?.UpVotes}}
+        </h4>
+        <h4>
+          <a [routerLink]="">
+            <mat-icon>thumb_down</mat-icon>
+          </a> {{plan?.DownVotes}}
+        </h4>
+      </div>
       <mat-accordion>
         <mat-expansion-panel class="mat-elevation-z0">
           <mat-expansion-panel-header>
@@ -35,18 +42,18 @@
           <h3>
             Course Content:
           </h3>
-          <mat-accordion *ngFor="let concept of plan?.Concepts">
+          <mat-accordion *ngFor="let topic of plan?.Topics">
               <mat-expansion-panel class="mat-elevation-z0">
                 <mat-expansion-panel-header>
                   <mat-panel-title>
-                   {{concept}}
+                   {{topic.Name}}
                   </mat-panel-title>
                   <mat-panel-description>
                     
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                   <p *ngFor="let item of plan?.Resources">
-                   <a routerLink=''>{{item}}</a>
+                   <p *ngFor="let link of topic.Resources">
+                   <a routerLink=''>{{link.ResourceLink}}</a>
                    </p>
           </mat-expansion-panel>
         </mat-accordion>
@@ -55,21 +62,6 @@
     </mat-card-content>
     
     <mat-card-actions>
-      <div class="votes">
-        <h4>
-          <a [routerLink]="">
-            <mat-icon>thumb_up</mat-icon>
-          </a> {{plan?.UpVotes}}
-        </h4>
-        <h4>
-          <a [routerLink]="">
-            <mat-icon>thumb_down</mat-icon>
-          </a> {{plan?.DownVotes}}
-        </h4>
-      </div>
-      <button mat-button [routerLink]=''>
-        EDIT
-      </button>
       <!-- <button mat-button  (click)="toggle()">
         {{buttonName}}
       </button> -->
