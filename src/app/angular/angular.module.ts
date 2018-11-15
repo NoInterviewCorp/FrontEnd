@@ -43,6 +43,7 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatProgressBarModule,
     MatRadioModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MatPaginatorModule
   ],
   exports: [
@@ -69,6 +70,7 @@ import { MatSidenavModule, MatListModule, MatChipsModule, MatSelectModule, MatEx
     MatProgressBarModule,
     MatRadioModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MatPaginatorModule
   ],
   declarations: []
