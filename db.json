@@ -235,8 +235,8 @@
 "DownVotes": 15,
 "UpVotes": 22,
 "Owner": "Max",
-"Summary": "c# learning plan suited for beginners, experts.",
-"Technology": "c#",
+"Summary": "Python learning plan suited for beginners, experts.",
+"Technology": "Python",
 "Topics": [
 {"TopicId":104,
     "Name":"OOPS",
@@ -282,7 +282,35 @@
             }
     ]
     
-        }
+        },
+        {
+            "LearningPlanID": 4,
+            "Avatar":"../../assets/placeholder-team.jpg",
+            "DownVotes": 15,
+            "UpVotes": 22,
+            "Owner": "Max",
+            "Summary": "Angular learning plan suited for beginners, experts.",
+            "Technology": "Angular",
+            "Topics": [
+                {"TopicId":107,
+                    "Name":"OOPS",
+                    "Resources":[{"ResourceId":1,"ResourceLink":"link1"},{"ResourceId":2,"ResourceLink":"link2"},
+                    {"ResourceId":3,"ResourceLink":"link3"},{"ResourceId":4,"ResourceLink":"link4"}]
+                },
+                {"TopicId":108,
+                    "Name":"Loops",
+                    "Resources":[{"ResourceId":5,"ResourceLink":"link5"},{"ResourceId":6,"ResourceLink":"link6"},
+                        {"ResourceId":7,"ResourceLink":"link7"},{"ResourceId":8,"ResourceLink":"link8"}]
+                    },
+                    {"TopicId":109,
+                    "Name":"Arrays",
+                    "Resources":[{"ResourceId":9,"ResourceLink":"link9"},{"ResourceId":10,"ResourceLink":"link10"},
+                        {"ResourceId":11,"ResourceLink":"link11"},{"ResourceId":12,"ResourceLink":"link12"}]
+                    }
+            ]
+            
+                }
+        
 
 ],
 "Concept":[

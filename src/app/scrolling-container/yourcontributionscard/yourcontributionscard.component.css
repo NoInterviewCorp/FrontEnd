@@ -7,6 +7,12 @@ mat-card{
     padding-bottom: 0;
     border-radius: 0;
 }
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
 .votes{
     display: flex;
@@ -39,4 +45,8 @@ a{
 }
 mat-accordian{
     width:300px;
+}
+button{
+    background-color: black;
+    color: white;
 }

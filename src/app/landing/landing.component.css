@@ -21,11 +21,12 @@ color: aliceblue;
 font-size: 30px;
 }
 .body {
-    background-color: #ccff90;
+    /* background-color: #ccff90; */
+    background-color: rgb(226, 221, 221);
     height: 100%;
  }
  .body1 {
-    background-color: #e7ff8c;
+    background-color: rgb(226, 221, 221);
     height: 100%;
  }
  

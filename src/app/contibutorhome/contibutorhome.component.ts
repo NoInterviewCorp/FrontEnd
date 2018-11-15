@@ -7,8 +7,28 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContibutorhomeComponent implements OnInit {
   LearningPlan: Array<number> = [1,2,3,4,5];
+  hasClickedContributions:boolean;
+  hasClickedAddLP:boolean;
+  hasClickedAddResource:boolean;
   constructor() { }
 
   ngOnInit() {
+    this.hasClickedContributions=true;
   }
+  
+  clickedAddLP(){
+     this.hasClickedAddLP=true;
+     this.hasClickedAddResource=false;
+     this.hasClickedContributions=false;
+  }
+  clickedAddResource(){
+     this.hasClickedAddResource=true;
+     this.hasClickedAddLP=false;
+     this.hasClickedContributions=false;
+  }
+  clickedContributions(){
+    this.hasClickedAddResource=false;
+    this.hasClickedAddLP=false;
+    this.hasClickedContributions=true;
+ }
 }
