@@ -9,9 +9,30 @@ export class LearnerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  hasClickedTech : boolean;
+  hasClickedSubs : boolean;
+  hasClickedLearn : boolean;
 
+  ngOnInit() {
+    this.hasClickedTech=true;
   }
 
+  clickedTech() {
+    this.hasClickedTech=true;
+    this.hasClickedSubs=false;
+    this.hasClickedLearn=false;
+  }
+
+  clickedSubs() {
+    this.hasClickedTech=false;
+    this.hasClickedSubs=true;
+    this.hasClickedLearn=false;
+  }
+  
+  clickedLearn() {
+    this.hasClickedTech=false;
+    this.hasClickedSubs=false;
+    this.hasClickedLearn=true;
+  }
 
 }
