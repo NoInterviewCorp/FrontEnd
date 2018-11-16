@@ -10,14 +10,17 @@
   .example-sidenav-content {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
   }
   
   .example-sidenav {
+      position: fixed;
+      height: 100%;
     padding: 0;
   }
   
   button{
       font-size: 18px;
   }
-  
+  mat-icon {
+      font-size: 50px;
+  }
