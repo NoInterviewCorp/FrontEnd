@@ -1,7 +1,7 @@
 import { Topic } from "./topic.model";
 
 export class LearningPlan{
-    LearningPlanId:number;
+    LearningPlanID:number;
     Technology:string;
     Summary:string;
     UpVotes:number;

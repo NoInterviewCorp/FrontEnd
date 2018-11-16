@@ -22,7 +22,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { TabsComponent } from './landing/tabs/tabs.component';
 import { ScrollingContainerComponent } from './scrolling-container/scrolling-container.component';
-import { LearningPlanComponent } from './learning-plan/learning-plan.component';
 import { LearnComponent } from './learn/learn.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,6 +38,7 @@ import { AddtopicComponent } from './addtopic/addtopic.component';
 import { SubscribecardComponent } from './scrolling-container/subscribecard/subscribecard.component';
 import { YoursubscriptionscardComponent } from './scrolling-container/yoursubscriptionscard/yoursubscriptionscard.component';
 import { YourcontributionscardComponent } from './scrolling-container/yourcontributionscard/yourcontributionscard.component';
+import { EditlearningplanComponent } from './editlearningplan/editlearningplan.component';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -62,7 +62,6 @@ export function getAuthServiceConfigs() {
     LandingComponent,
     TabsComponent,
     ScrollingContainerComponent,
-    LearningPlanComponent,
     LearnComponent,
     ContributeComponent,
     SignInComponent,
@@ -81,7 +80,8 @@ export function getAuthServiceConfigs() {
     AddtopicComponent,
     SubscribecardComponent,
     YoursubscriptionscardComponent,
-    YourcontributionscardComponent
+    YourcontributionscardComponent,
+    EditlearningplanComponent,
   ],
   imports: [
     BrowserModule,

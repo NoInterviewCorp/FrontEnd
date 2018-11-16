@@ -27,6 +27,9 @@ export class CommunicatorService {
   getPopularPlans(){
     return this.http.get('http://localhost:3000/LearningPlan')
   }
+  getPlansById(LearningPlanID:string){
+    return this.http.get('http://localhost:3000/LearningPlan'+LearningPlanID+'?text=id')
+  }
   postQuestions(){
 
   }

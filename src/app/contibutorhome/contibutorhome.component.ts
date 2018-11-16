@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MAT_DRAWER_DEFAULT_AUTOSIZE } from '@angular/material';
 
 @Component({
   selector: 'app-contibutorhome',
