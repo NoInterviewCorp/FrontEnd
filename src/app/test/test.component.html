@@ -1,7 +1,7 @@
 <div class="test">
 
 <div class = "button-flex">
-<button mat-raised-button color="primary" *ngIf="showQuesButton" (click)="display()">Show Questions</button><br><br>
+<button mat-raised-button class="Btn" *ngIf="showQuesButton" (click)="display()">Show Questions</button><br><br>
 </div>
 
 <div class="test-box" *ngIf="!callResult">
@@ -38,7 +38,7 @@
 </div>
 
 <div class="button-flex">
-<button mat-raised-button color="primary" *ngIf="showNextButton" (click)="nextQuestion()">Next</button>
+<button mat-raised-button class="Btn" *ngIf="showNextButton" (click)="nextQuestion()">Next</button>
 <a routerLink="/result" routerLinkActive="active" button mat-raised-button color="primary"  *ngIf="callResult" > Show Results</a>
 </div>
 

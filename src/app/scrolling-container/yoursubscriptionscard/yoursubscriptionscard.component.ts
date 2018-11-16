@@ -8,6 +8,7 @@ import { LearningPlan } from 'src/models/learningplan.model';
 })
 export class YoursubscriptionscardComponent implements OnInit {
 @Input() plan: LearningPlan[];
+items=[1,2,3,4,5];
   constructor() { }
 
   ngOnInit() {
