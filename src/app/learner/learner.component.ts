@@ -12,11 +12,23 @@ export class LearnerComponent implements OnInit {
   hasClickedTech : boolean;
   hasClickedSubs : boolean;
   hasClickedLearn : boolean;
+  hasClickedRight : boolean;
+  hasClickedLeft : boolean;
 
   ngOnInit() {
     this.hasClickedTech=true;
+    this.hasClickedLeft=true;
+    this.hasClickedRight=false;
   }
 
+  clickedRight(){
+    this.hasClickedRight=true;
+    this.hasClickedLeft=false;
+  }
+  clickedLeft(){
+    this.hasClickedRight=false;
+    this.hasClickedLeft=true;
+  }
   clickedTech() {
     this.hasClickedTech=true;
     this.hasClickedSubs=false;
