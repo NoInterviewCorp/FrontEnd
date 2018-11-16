@@ -10,10 +10,22 @@ export class ContibutorhomeComponent implements OnInit {
   hasClickedContributions:boolean;
   hasClickedAddLP:boolean;
   hasClickedAddResource:boolean;
+  hasClickedRight:boolean;
+  hasClickedLeft:boolean;
   constructor() { }
 
   ngOnInit() {
     this.hasClickedContributions=true;
+    this.hasClickedLeft=true;
+    this.hasClickedRight=false;
+  }
+  clickedRight(){
+    this.hasClickedRight=true;
+    this.hasClickedLeft=false;
+  }
+  clickedLeft(){
+    this.hasClickedRight=false;
+    this.hasClickedLeft=true;
   }
   
   clickedAddLP(){
